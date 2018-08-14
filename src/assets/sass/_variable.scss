@@ -1,0 +1,68 @@
+$main-fs: 14px;
+$main-ff: 'Roboto', sans-serif;
+$main-fw: 400;
+$main-lh: 1.5714286;
+$module: 1.5714286rem;
+
+$main-ff: 'Open Sans', sans-serif;
+$second-ff: 'Nunito Sans', sans-serif;
+$heading-ff:'Oswald', sans-serif;
+
+$animation: ease-in-out;
+
+$navigation-width: 150px;
+
+$max543 : only screen and (max-width: 543px);
+$min544 : only screen and (min-width: 544px);
+$max767 : only screen and (max-width: 767px);
+$min768 : only screen and (min-width: 768px);
+$max991 : only screen and (max-width: 991px);
+$min992 : only screen and (min-width: 992px);
+$max1199 : only screen and (max-width: 1199px);
+$min1200 : only screen and (min-width: 1200px);
+
+$headers-ff: $second-ff;
+$headers-fw: 700;
+
+$success-color: #008000;
+$info-color: #00bfff;
+$warning-color: #ff8c00;
+$danger-color: #dc143c;
+
+$brand-primary: #064B79;
+$accent-color: #FF6265;
+$lighter-blue: #bbdefb;
+$light-grey: rgba(255, 254, 254, .5);
+$lighter-grey: #fefefe;
+$dark-grey: #a0a0a0;
+$sidebar-link: #757575;
+$dark-grey-link: #212121;
+
+
+$nav-color: (
+   0 : #ffffff,
+   1 : #447799,
+   2 : #88aabb,
+   3 : #1199cc,
+  10 : lighten($brand-primary, 0%),
+  20 : lighten($brand-primary, 5%),
+  30 : lighten($brand-primary, 10%),
+  40 : lighten($brand-primary, 15%),
+  50 : lighten($brand-primary, 35%),
+  60 : lighten($accent-color, 4%)
+);
+
+@function nav-color($key: $nav-color) {
+  @return map-get($nav-color, $key);
+}
+
+@mixin button-outline($color){
+  border-color: $color;
+  color: $color;
+}
+
+@mixin button-outline-hover($color){
+  background: $color;
+  color: white;
+}
+

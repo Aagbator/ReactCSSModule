@@ -1,0 +1,20 @@
+@import '../assets/sass/variable';
+
+.wrapper {
+  margin: 0;
+  padding: 0;
+  font-family: $main-ff;
+  min-height: 100vh;
+  height: 100%;
+  color: #fff;
+  .main_section {
+    width: calc(100% - #{$navigation-width});
+    background: #039;
+    min-height: 100vh;
+    height: 100%;
+    margin-left:$navigation-width;
+    display:block;
+  }
+}
+
+
