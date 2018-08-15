@@ -1,0 +1,20 @@
+@import '../../../assets/sass/variable';
+
+.about {
+  margin: 0;
+  padding: 0;
+  font-family: $main-ff;
+  min-height: 100vh;
+  height: 100%;
+  background-color: beige;
+  position: relative;
+  color: #fff;
+  background-image: url(https://images.fastcompany.net/image/upload/w_1280,f_auto,q_auto,fl_lossy/wp-cms/uploads/2018/01/p-1-tesla-recruiter-shares-six-strategies-to-land-a-job-at-the-company.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  .main_section {
+    height: 200px;
+    width: 50px;
+  }
+}

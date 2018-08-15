@@ -1,14 +1,16 @@
 .wrapper {
   margin: 0;
   padding: 0;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
   min-height: 100vh;
   height: 100%;
   color: #fff; }
   .wrapper .main_section {
-    width: calc(100% - 150px);
-    background: #039;
     min-height: 100vh;
     height: 100%;
-    margin-left: 150px;
     display: block; }
+    @media (min-width: 768px) {
+      .wrapper .main_section {
+        margin-left: 150px;
+        width: calc(100% - 150px);
+        transition: all 0.5s; } }

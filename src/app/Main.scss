@@ -8,11 +8,13 @@
   height: 100%;
   color: #fff;
   .main_section {
-    width: calc(100% - #{$navigation-width});
-    background: #039;
+    @media #{$min768} {
+      margin-left:$navigation-width;
+      width: calc(100% - #{$navigation-width});
+      transition: all 0.5s;
+    }
     min-height: 100vh;
     height: 100%;
-    margin-left:$navigation-width;
     display:block;
   }
 }

@@ -3,13 +3,14 @@
  */
 
 import React from 'react';
-// import styles from './Home.css';
+import styles from './Home.css';
 
 export default class Home extends React.Component{
     render(){
         return(
-            <div>
-                <h1>Hello Home</h1>
+            <div className={styles.home}>
+                <p>Hello World!</p>
+                <h5>home</h5>
             </div>
         )
     }

@@ -4,7 +4,9 @@ $main-fw: 400;
 $main-lh: 1.5714286;
 $module: 1.5714286rem;
 
-$main-ff: 'Open Sans', sans-serif;
+//$main-ff: 'Open Sans', sans-serif;
+$main-ff: 'Montserrat', sans-serif;;
+
 $second-ff: 'Nunito Sans', sans-serif;
 $heading-ff:'Oswald', sans-serif;
 
@@ -39,18 +41,11 @@ $sidebar-link: #757575;
 $dark-grey-link: #212121;
 
 
-$nav-color: (
-   0 : #ffffff,
-   1 : #447799,
-   2 : #88aabb,
-   3 : #1199cc,
-  10 : lighten($brand-primary, 0%),
-  20 : lighten($brand-primary, 5%),
-  30 : lighten($brand-primary, 10%),
-  40 : lighten($brand-primary, 15%),
-  50 : lighten($brand-primary, 35%),
-  60 : lighten($accent-color, 4%)
-);
+$nav-color-1 : #064B79;
+$nav-color-2 : #065583;
+$nav-color-3 : #066290;
+$nav-color-4 : #447799;
+$nav-color-5 : #ff6265;
 
 @function nav-color($key: $nav-color) {
   @return map-get($nav-color, $key);
