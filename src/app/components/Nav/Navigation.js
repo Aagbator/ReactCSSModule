@@ -66,8 +66,9 @@ export default class Navigation extends React.Component {
                             <a><i className={`fab fa-facebook-f`}></i></a>
                             <a><i className={`fab fa-twitter`}></i></a>
                             <a><i className={`fab fa-linkedin-in`}></i> </a>
+                            <p> &copy; 2018 Swifta</p>
                         </div>
-                        <p> &copy; 2018 Swifta</p>
+
                     </li>
                 </ul>
             </nav>

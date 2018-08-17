@@ -1,9 +1,20 @@
+.container {
+  padding: 0.01em 60px; }
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table; }
+
+[class*="col-"] {
+  float: left; }
+
 .navigation {
   display: flex;
   justify-content: stretch;
   flex-direction: column;
   transition: all 0.5s;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Barlow Semi Condensed", sans-serif;
   background: #fff;
   position: fixed;
   top: 0px;
@@ -19,16 +30,14 @@
     list-style-type: none;
     margin: 0;
     padding: 0; }
-    .navigation ul li .link, .navigation ul li .brand {
+    .navigation ul li .link, .navigation ul li .brand, .navigation ul li .socials {
       padding: 0.75rem 0.5rem; }
       @media (min-width: 768px) {
-        .navigation ul li .link, .navigation ul li .brand {
+        .navigation ul li .link, .navigation ul li .brand, .navigation ul li .socials {
           min-height: calc(100vh / 7); } }
-      .navigation ul li .link:hover, .navigation ul li .brand:hover {
-        cursor: pointer;
-        background-color: #bbdefb; }
-    .navigation ul li .link-active {
-      background-color: #bbdefb !important; }
+    .navigation ul li .link:hover, .navigation ul li .brand:hover {
+      cursor: pointer;
+      background-color: #036; }
     .navigation ul li .brand {
       background-color: #fff; }
     .navigation ul li .link {
@@ -49,12 +58,15 @@
         width: auto; }
       .navigation ul li .link span {
         display: block;
-        font-size: 0.7rem;
+        font-size: 3vw;
         text-transform: uppercase;
         margin-top: 5px; }
-        @media (min-width: 768px) {
+        @media (max-width: 300px) {
           .navigation ul li .link span {
-            font-size: calc( 14px + 20px - 8px * ((100vw - 768px) / 1500)); } }
+            font-size: 9px; } }
+        @media (min-width: 400px) {
+          .navigation ul li .link span {
+            font-size: 12px; } }
     .navigation ul li .socials {
       padding-top: 1rem;
       text-align: center; }
@@ -74,6 +86,7 @@
           border: 2px solid #212121;
           cursor: pointer; }
     .navigation ul li p {
+      margin-top: 15px;
       text-align: center;
       color: #6c757d;
       font-size: 0.8rem; }

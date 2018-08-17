@@ -4,10 +4,8 @@ $main-fw: 400;
 $main-lh: 1.5714286;
 $module: 1.5714286rem;
 
-//$main-ff: 'Open Sans', sans-serif;
-$main-ff: 'Montserrat', sans-serif;;
-
-$second-ff: 'Nunito Sans', sans-serif;
+$main-ff:'Barlow Semi Condensed', sans-serif;
+$second-ff: 'Lato', sans-serif;
 $heading-ff:'Oswald', sans-serif;
 
 $animation: ease-in-out;
@@ -33,10 +31,12 @@ $danger-color: #dc143c;
 
 $brand-primary: #064B79;
 $accent-color: #FF6265;
+$light-blue: #3394cb;
 $lighter-blue: #bbdefb;
 $light-grey: rgba(255, 254, 254, .5);
 $lighter-grey: #fefefe;
 $dark-grey: #a0a0a0;
+$darker-grey: #212121;
 $sidebar-link: #757575;
 $dark-grey-link: #212121;
 

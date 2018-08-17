@@ -1,0 +1,68 @@
+///
+/// Viewport sized typography with minimum and maximum values
+///
+/// @author Eduardo Boucas (@eduardoboucas)
+///
+/// @param {Number}   $responsive  - Viewport-based size
+/// @param {Number}   $min         - Minimum font size (px)
+/// @param {Number}   $max         - Maximum font size (px)
+///                                  (optional)
+/// @param {Number}   $fallback    - Fallback for viewport-
+///                                  based units (optional)
+///
+/// @example scss - 5vw font size (with 50px fallback),
+///                 minumum of 35px and maximum of 150px
+///  @include responsive-font(5vw, 35px, 150px, 50px);
+///
+@mixin responsive-font($responsive, $min, $max: false, $fallback: false) {
+  $responsive-unitless: $responsive / ($responsive - $responsive + 1);
+  $dimension: if(unit($responsive) == 'vh', 'height', 'width');
+  $min-breakpoint: $min / $responsive-unitless * 100;
+
+  @media (max-#{$dimension}: #{$min-breakpoint}) {
+    font-size: $min;
+  }
+
+  @if $max {
+    $max-breakpoint: $max / $responsive-unitless * 100;
+
+    @media (min-#{$dimension}: #{$max-breakpoint}) {
+      font-size: $max;
+    }
+  }
+
+  @if $fallback {
+    font-size: $fallback;
+  }
+
+  font-size: $responsive;
+}
+
+.container{
+  padding: 0.01em 60px;
+}
+
+//grid system
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  //bg2.jpg
+}
+
+//.col-1 {width: 8.33%;}
+//.col-2 {width: 16.66%;}
+//.col-3 {width: 25%;}
+//.col-4 {width: 33.33%;}
+//.col-5 {width: 41.66%;}
+//.col-6 {width: 50%;}
+//.col-7 {width: 58.33%;}
+//.col-8 {width: 66.66%;}
+//.col-9 {width: 75%;}
+//.col-10 {width: 83.33%;}
+//.col-11 {width: 91.66%;}
+//.col-12 {width: 100%;}

@@ -1,21 +1,210 @@
+@import '../../../assets/sass/variable';
+@import '../../../assets/sass/helpers';
+
 .home{
   color:#000;
+  .home-container{
+    position: relative;
+    color: #fff;
+    background-color: #000000;
+   // background-image: url(../../../assets/images/bg.jpg) left top, linear-gradient(#eb01a5, #d13531);
+    background: #065785;
+    background: url(../../../assets/images/bg.jpg); /* fallback */
+    background: linear-gradient(to bottom,rgba(9,87,133, 0.4), rgba(0,0,0, 0.8)),url(../../../assets/images/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    min-height:100vh;
+    height:100%;
+    text-align:center;
+    .content{
+      @media #{$min768} {
+        height: 60vh;
+        padding: 25vh 14vw 9vh;
+        margin:0 auto;
+      }
+
+      padding: 15vh 6vw 2vh;
+
+      h1{
+        @include responsive-font(3vw, 28px, 60px);
+        font-weight:600;
+        @media #{$min768} {
+          margin-bottom:40px;
+        }
+        line-height:1.35;
+        margin-bottom:20px;
+      }
+      p{
+        @include responsive-font(3vw, 16px, 18px);
+        font-family: $second-ff;
+        font-weight:200;
+        line-height:1.5;
+        padding: 0 10%;
+      }
+    }
+    .logos{
+      @media #{$min768} {
+        width:50%;
+        margin:0 auto;
+      }
+      margin:80px auto;
+      @include responsive-font(3vw, 8px, 14px);
+      h6{
+        font-weight:200;
+        text-transform: capitalize;
+        @media #{$min768} {
+          width:100%;
+        }
+        margin-bottom: 20px;
+        &:before,
+        &:after {
+          background-color: rgba(255,255,255,.1);
+          content: "";
+          display: inline-block;
+          height: 1px;
+          position: relative;
+          vertical-align: middle;
+          width: 50%;
+        }
+        &:before{
+          right: 0.5em;
+          margin-left: -50%;
+        }
+        &:after{
+          left: 0.5em;
+          margin-right: -50%;
+        }
+      }
+      ul{
+        .partners{
+          display:inline-block;
+          height:15px;
+          margin:10px;
+          @media #{$min768} {
+            height:20px;
+          }
+          img{
+            height:100%;
+            width:auto;
+          }
+        }
+      }
+    }
+    .home-bottom{
+      position:absolute;
+      top: calc(100vh - 100px);
+      width:100%;
+      .scroll-downs {
+          @media #{$min768} {
+          display: block;
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          margin: auto;
+
+          width :24px;
+          height: 45px;
+          .mouse {
+            width: 2px;
+            padding: 10px 15px;
+            height: 35px;
+            border: 2px solid rgba(255,255,255, .7);
+            border-radius: 25px;
+            opacity: 0.75;
+            box-sizing: content-box;
+            .scroller {
+              width: 2px;
+              height: 10px;
+              border-radius: 25%;
+              background-color: #fff;
+              animation-name: scroll;
+              animation-duration: 2.2s;
+              animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+              animation-iteration-count: infinite;
+            }
+          }
+        }
+      }
+
+      @keyframes scroll {
+        0% { opacity: 0; }
+        10% { transform: translateY(0); opacity: 1; }
+        100% { transform: translateY(15px); opacity: 0;}
+      }
+    }
+  }
+
+  .intro-container{
+    text-align:center;
+    .col-1{
+      @media #{$min768} {
+        float:right;
+        width: 50%;
+      }
+      width: 100%;
+      .img-container{
+        @media #{$min768} {
+          height:400px;
+        }
+        height:250px;
+        box-sizing:border-box;
+        img{
+          height:100%;
+          width:auto;
+        }
+      }
+    }
+    .col-2 {
+      @media #{$min768} {
+        float:left;
+        width: 50%;
+      }
+      text-align:left;
+      h2{
+        @media #{$min768} {
+          margin:7rem 0.5rem 2rem;
+        }
+        color: $light-blue;
+        margin:1rem 0.5rem ;
+        @include responsive-font(3vw, 28px, 35px);
+        font-weight:600;
+      }
+      p{
+        @include responsive-font(3vw, 16px, 21px);
+        font-weight:300;
+        line-height:1.5;
+        color:$darker-grey
+      }
+    }
+  }
+
+  .services-container{
+    background: $lighter-blue;
+    .col-1{
+      @media #{$min768} {
+        float:left;
+        width: 50%;
+        padding: 0.01em 0px 0px 60px;
+      }
+      h2{
+        @media #{$min768} {
+          margin:7rem 0.5rem 2rem;
+        }
+        color: #fff;
+        margin:1rem 0.5rem ;
+        @include responsive-font(3vw, 24px, 35px);
+        font-weight:600;
+      }
+    }
+    .col-2 {
+      @media #{$min768} {
+        float:left;
+        width: 50%;
+      }
+    }
+  }
+
 }
-//.wrapper {
-//  margin: 0;
-//  padding: 0;
-//  font-family: $main-ff;
-//  min-height: 100vh;
-//  height: 100%;
-//  background-color: beige;
-//  position: relative;
-//  color: #fff;
-//  background-image: url(https://images.fastcompany.net/image/upload/w_1280,f_auto,q_auto,fl_lossy/wp-cms/uploads/2018/01/p-1-tesla-recruiter-shares-six-strategies-to-land-a-job-at-the-company.jpg);
-//  background-repeat: no-repeat;
-//  background-position: top center;
-//  background-size: cover;
-//  .main_section {
-//    height: 200px;
-//    width: 50px;
-//  }
-//}
