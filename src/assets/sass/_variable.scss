@@ -34,11 +34,12 @@ $accent-color: #FF6265;
 $light-blue: #3394cb;
 $lighter-blue: #bbdefb;
 $light-grey: rgba(255, 254, 254, .5);
-$lighter-grey: #fefefe;
+$lighter-grey: #ededed;
 $dark-grey: #a0a0a0;
 $darker-grey: #212121;
 $sidebar-link: #757575;
-$dark-grey-link: #212121;
+$dark-grey-link: #444;
+$grey-text: #333333;
 
 
 $nav-color-1 : #064B79;
@@ -46,6 +47,11 @@ $nav-color-2 : #065583;
 $nav-color-3 : #066290;
 $nav-color-4 : #447799;
 $nav-color-5 : #ff6265;
+
+
+$linkedin : #0077B5;
+$twitter : #1da1f2;
+
 
 @function nav-color($key: $nav-color) {
   @return map-get($nav-color, $key);

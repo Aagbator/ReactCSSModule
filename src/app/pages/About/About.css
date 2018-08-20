@@ -1,16 +1,278 @@
+.container {
+  padding: 0.01em 30px; }
+  @media (min-width: 992px) {
+    .container {
+      padding: 0.01em 60px; } }
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table; }
+
+[class*="col-"] {
+  float: left; }
+
 .about {
-  margin: 0;
-  padding: 0;
-  font-family: "Barlow Semi Condensed", sans-serif;
-  min-height: 100vh;
-  height: 100%;
-  background-color: beige;
-  position: relative;
-  color: #fff;
-  background-image: url(https://images.fastcompany.net/image/upload/w_1280,f_auto,q_auto,fl_lossy/wp-cms/uploads/2018/01/p-1-tesla-recruiter-shares-six-strategies-to-land-a-job-at-the-company.jpg);
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: cover; }
-  .about .main_section {
-    height: 200px;
-    width: 50px; }
+  color: #000; }
+  .about .about-container {
+    position: relative;
+    color: #fff;
+    background-color: #000000;
+    background: #065785;
+    background: url(../../../assets/images/bg.jpg);
+    /* fallback */
+    background: linear-gradient(to bottom, rgba(9, 87, 133, 0.4), rgba(0, 0, 0, 0.8)), url(../../../assets/images/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    min-height: 30vh;
+    height: 30%;
+    text-align: center; }
+    .about .about-container .content {
+      padding: 8vh 6vw; }
+      @media (min-width: 992px) {
+        .about .about-container .content {
+          min-height: 40vh;
+          height: 40%;
+          padding: 10vh 14vw;
+          margin: 0 auto; } }
+      .about .about-container .content h1 {
+        font-size: 3vw;
+        font-weight: 600;
+        text-transform: uppercase;
+        line-height: 1.35;
+        margin-bottom: 20px; }
+        @media (max-width: 800px) {
+          .about .about-container .content h1 {
+            font-size: 24px; } }
+        @media (min-width: 2000px) {
+          .about .about-container .content h1 {
+            font-size: 60px; } }
+        @media (min-width: 992px) {
+          .about .about-container .content h1 {
+            margin-bottom: 20px; } }
+      .about .about-container .content p {
+        font-size: 3vw;
+        font-family: "Lato", sans-serif;
+        font-weight: 200;
+        line-height: 1.5; }
+        @media (max-width: 533.33333px) {
+          .about .about-container .content p {
+            font-size: 16px; } }
+        @media (min-width: 600px) {
+          .about .about-container .content p {
+            font-size: 18px; } }
+        @media (min-width: 992px) {
+          .about .about-container .content p {
+            padding: 0 10%; } }
+  .about .intro-container {
+    text-align: center;
+    min-height: 40vh;
+    padding: 5rem 0; }
+    .about .intro-container .col-1 {
+      width: 100%; }
+      @media (min-width: 992px) {
+        .about .intro-container .col-1 {
+          float: right;
+          width: 50%; } }
+      .about .intro-container .col-1 .img-container {
+        height: 200px;
+        height: 250px;
+        box-sizing: border-box; }
+        @media (min-width: 992px) {
+          .about .intro-container .col-1 .img-container {
+            height: 400px; } }
+        .about .intro-container .col-1 .img-container img {
+          height: 100%;
+          width: auto; }
+    .about .intro-container .col-2 {
+      text-align: left; }
+      @media (min-width: 992px) {
+        .about .intro-container .col-2 {
+          float: left;
+          width: 50%; } }
+      .about .intro-container .col-2 h2 {
+        margin: 1rem 0;
+        font-size: 3vw;
+        font-weight: 600;
+        line-height: 1.5; }
+        @media (min-width: 992px) {
+          .about .intro-container .col-2 h2 {
+            margin: 2rem 0; } }
+        @media (max-width: 700px) {
+          .about .intro-container .col-2 h2 {
+            font-size: 21px; } }
+        @media (min-width: 933.33333px) {
+          .about .intro-container .col-2 h2 {
+            font-size: 28px; } }
+      .about .intro-container .col-2 p {
+        font-size: 3vw;
+        font-weight: 200;
+        line-height: 1.5;
+        color: #333333; }
+        @media (max-width: 533.33333px) {
+          .about .intro-container .col-2 p {
+            font-size: 16px; } }
+        @media (min-width: 600px) {
+          .about .intro-container .col-2 p {
+            font-size: 18px; } }
+  .about .strategy-container {
+    background-color: #212121;
+    text-align: center;
+    min-height: 40vh;
+    padding: 5rem 0; }
+    .about .strategy-container .col-1 {
+      width: 100%; }
+      @media (min-width: 992px) {
+        .about .strategy-container .col-1 {
+          width: 50%; } }
+      .about .strategy-container .col-1 .img-container {
+        height: 200px;
+        height: 250px;
+        box-sizing: border-box; }
+        @media (min-width: 992px) {
+          .about .strategy-container .col-1 .img-container {
+            height: 400px; } }
+        .about .strategy-container .col-1 .img-container img {
+          height: 100%;
+          width: auto; }
+    .about .strategy-container .col-2 {
+      color: #fff;
+      text-align: left; }
+      @media (min-width: 992px) {
+        .about .strategy-container .col-2 {
+          width: 50%; } }
+      .about .strategy-container .col-2 h2 {
+        margin: 1rem 0rem;
+        font-size: 3vw;
+        font-weight: 600;
+        line-height: 1.5; }
+        @media (min-width: 992px) {
+          .about .strategy-container .col-2 h2 {
+            margin: 2rem 0; } }
+        @media (max-width: 700px) {
+          .about .strategy-container .col-2 h2 {
+            font-size: 21px; } }
+        @media (min-width: 933.33333px) {
+          .about .strategy-container .col-2 h2 {
+            font-size: 28px; } }
+      .about .strategy-container .col-2 p {
+        font-size: 3vw;
+        font-weight: 200;
+        line-height: 1.5; }
+        @media (max-width: 533.33333px) {
+          .about .strategy-container .col-2 p {
+            font-size: 16px; } }
+        @media (min-width: 600px) {
+          .about .strategy-container .col-2 p {
+            font-size: 18px; } }
+  .about .team-container {
+    text-align: center;
+    min-height: 40vh;
+    padding: 2rem 0rem 1rem; }
+    @media (min-width: 992px) {
+      .about .team-container {
+        padding: 3rem 0 8rem; } }
+    .about .team-container header {
+      padding: 10px 5vw; }
+      @media (min-width: 992px) {
+        .about .team-container header {
+          padding: 10px 15vw; } }
+      .about .team-container header h2 {
+        text-transform: uppercase;
+        margin: 2rem 0rem 1rem;
+        font-size: 3vw;
+        font-weight: 600;
+        line-height: 1.5; }
+        @media (min-width: 992px) {
+          .about .team-container header h2 {
+            margin: 1rem 0rem; } }
+        @media (max-width: 700px) {
+          .about .team-container header h2 {
+            font-size: 21px; } }
+        @media (min-width: 933.33333px) {
+          .about .team-container header h2 {
+            font-size: 28px; } }
+      .about .team-container header p {
+        font-size: 3vw;
+        line-height: 1.5;
+        color: #212121; }
+        @media (max-width: 466.66667px) {
+          .about .team-container header p {
+            font-size: 14px; } }
+        @media (min-width: 600px) {
+          .about .team-container header p {
+            font-size: 18px; } }
+        @media (min-width: 992px) {
+          .about .team-container header p {
+            margin: 1rem 0rem 3rem; } }
+    .about .team-container .team-profiles {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: center; }
+      .about .team-container .team-profiles .card {
+        text-align: center;
+        margin: 1.5%;
+        padding: 2rem;
+        transition: 0.2s all;
+        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1); }
+        .about .team-container .team-profiles .card:hover {
+          box-shadow: 0 5px 8px 4px rgba(0, 0, 0, 0.1); }
+          .about .team-container .team-profiles .card:hover .socials .linkedin {
+            color: #0077B5; }
+          .about .team-container .team-profiles .card:hover .socials .twitter {
+            color: #1da1f2; }
+        @media (min-width: 992px) {
+          .about .team-container .team-profiles .card {
+            padding: 20px 10px;
+            flex: 0 1 22%; } }
+        @media (max-width: 991px) {
+          .about .team-container .team-profiles .card {
+            flex: 1 0 30%; } }
+        @media (max-width: 767px) {
+          .about .team-container .team-profiles .card {
+            flex: 0 0 45%; } }
+        @media (max-width: 543px) {
+          .about .team-container .team-profiles .card {
+            flex: 0 0 80%;
+            margin: 10px 0; } }
+        .about .team-container .team-profiles .card .img-container {
+          height: 100px; }
+          .about .team-container .team-profiles .card .img-container img {
+            height: 100%;
+            width: auto;
+            border-radius: 100%; }
+        .about .team-container .team-profiles .card h2 {
+          text-transform: capitalize;
+          font-weight: 400;
+          font-size: 3vw;
+          margin: 0.5rem 0;
+          color: #fff;
+          color: #212121; }
+          @media (max-width: 400px) {
+            .about .team-container .team-profiles .card h2 {
+              font-size: 12px; } }
+          @media (min-width: 533.33333px) {
+            .about .team-container .team-profiles .card h2 {
+              font-size: 16px; } }
+        .about .team-container .team-profiles .card p {
+          font-size: 3vw;
+          text-transform: capitalize;
+          font-weight: 200;
+          line-height: 1.5;
+          color: #212121; }
+          @media (max-width: 300px) {
+            .about .team-container .team-profiles .card p {
+              font-size: 9px; } }
+          @media (min-width: 400px) {
+            .about .team-container .team-profiles .card p {
+              font-size: 12px; } }
+        .about .team-container .team-profiles .card .socials {
+          margin: 1rem 0; }
+          .about .team-container .team-profiles .card .socials a {
+            color: #a1a1a1;
+            display: inline-block;
+            margin: 0px 5px; }
+            .about .team-container .team-profiles .card .socials a i {
+              font-size: 1.5rem; }

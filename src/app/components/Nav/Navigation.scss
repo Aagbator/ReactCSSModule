@@ -15,7 +15,7 @@
   z-index: 9;
   transform: translateX(-$navigation-width);
   overflow-x: hidden;
-  @media #{$min768} {
+  @media #{$min992} {
     transform: translateX(0);
   }
   ul{
@@ -24,18 +24,19 @@
     padding:0;
     li{
       .link, .brand, .socials{
-        @media #{$min768} {
+        @media #{$min992} {
           min-height: calc(100vh / 7);
         }
         padding:0.75rem 0.5rem;
         &.link-active{
-          //background-color: #036;
+          border-left: 5px solid $lighter-blue;
         }
       }
       .link, .brand{
+        border-left: 5px solid rgba(255,255,255,.1);
         &:hover{
           cursor: pointer;
-          background-color: #036;
+          border-left: 5px solid $lighter-blue;
         }
       }
       .brand{

@@ -1,0 +1,102 @@
+.container {
+  padding: 0.01em 30px; }
+  @media (min-width: 992px) {
+    .container {
+      padding: 0.01em 60px; } }
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table; }
+
+[class*="col-"] {
+  float: left; }
+
+.footer {
+  display: flex;
+  color: #000;
+  justify-content: center;
+  flex-direction: column;
+  transition: all 0.5s;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  background: #fff;
+  transform: translateX(0);
+  overflow-y: hidden;
+  border-top: 1px solid #ededed; }
+  @media (min-width: 992px) {
+    .footer {
+      flex-direction: row;
+      transform: translateX(150px);
+      width: calc(100% - 150px); } }
+  .footer .col-1, .footer .col-2, .footer .col-3 {
+    flex: 1 1;
+    box-sizing: content-box;
+    padding: 1.5rem 1rem; }
+    @media (min-width: 992px) {
+      .footer .col-1, .footer .col-2, .footer .col-3 {
+        padding: 60px 30px; } }
+  @media (min-width: 992px) {
+    .footer .col-1:after {
+      display: block;
+      z-index: 1;
+      font-family: "Font Awesome 5 Free";
+      font-size: 10rem;
+      color: #f4f4f4;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+      content: '\f0e0';
+      top: 10px;
+      left: 10px;
+      font-weight: 600;
+      position: absolute; } }
+  .footer .col-1 h1 {
+    font-size: 3vw;
+    position: relative;
+    z-index: 999;
+    text-transform: uppercase;
+    color: #ff7c7e;
+    font-weight: 600;
+    margin-bottom: 10px;
+    line-height: 1.25; }
+    @media (max-width: 933.33333px) {
+      .footer .col-1 h1 {
+        font-size: 28px; } }
+    @media (min-width: 1266.66667px) {
+      .footer .col-1 h1 {
+        font-size: 38px; } }
+  .footer .col-1 .mailbox {
+    display: block;
+    position: relative;
+    z-index: 99; }
+    .footer .col-1 .mailbox h6 {
+      font-weight: 600;
+      margin-bottom: 10px; }
+    .footer .col-1 .mailbox a {
+      color: #6e6e6e;
+      font-weight: 300;
+      text-decoration: none;
+      display: inline-block;
+      text-underline: none;
+      margin: 0px 0px 10px; }
+  .footer .col-2 h2, .footer .col-3 h2 {
+    font-weight: 400;
+    margin-bottom: 10px;
+    text-transform: uppercase; }
+  .footer .col-2 address, .footer .col-3 address {
+    font-size: 3vw;
+    color: #6e6e6e;
+    font-weight: 300;
+    text-transform: capitalize;
+    line-height: 1.5; }
+    @media (max-width: 466.66667px) {
+      .footer .col-2 address, .footer .col-3 address {
+        font-size: 14px; } }
+    @media (min-width: 533.33333px) {
+      .footer .col-2 address, .footer .col-3 address {
+        font-size: 16px; } }
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }

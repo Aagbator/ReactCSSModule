@@ -1,0 +1,95 @@
+@import '../../../assets/sass/variable';
+@import '../../../assets/sass/helpers';
+
+.footer{
+  display: flex;
+  color:#000;
+  justify-content: center;
+  flex-direction: column;
+  transition: all 0.5s;
+  font-family: $main-ff;
+  background: #fff;
+  transform: translateX(0);
+  overflow-y: hidden;
+  border-top:1px solid #ededed;
+  @media #{$min992} {
+    flex-direction: row;
+    transform: translateX($navigation-width);
+    width: calc(100% - #{$navigation-width});
+  }
+  .col-1, .col-2, .col-3{
+    flex: 1 1;
+    box-sizing:content-box;
+    @media #{$min992} {
+      padding: 60px 30px;
+    }
+    padding: 1.5rem 1rem;
+  }
+  .col-1{
+    &:after{
+      @media #{$min992} {
+        display: block;
+        z-index:1;
+        font-family: "Font Awesome 5 Free";
+        font-size:10rem;
+        color: #f4f4f4;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        content:'\f0e0';
+        top:10px;
+        left:10px;
+        font-weight: 600;
+        position:absolute;
+      }
+    }
+    h1{
+      @include responsive-font(3vw, 28px, 38px);
+      position: relative;
+      z-index: 999;
+      text-transform:uppercase;
+      color: lighten($accent-color, 5);
+      font-weight:600;
+      margin-bottom:10px;
+      line-height: 1.25;
+    }
+    .mailbox{
+      display: block;
+      position: relative;
+      z-index: 99;
+      h6{
+        font-weight:600;
+        margin-bottom:10px;
+      }
+      a{
+        color: lighten($darker-grey, 30);
+        font-weight: 300;
+        text-decoration:none;
+        display:inline-block;
+        text-underline: none;
+        margin:0px 0px 10px;
+
+      }
+    }
+  }
+  .col-2, .col-3{
+    h2{
+      font-weight:400;
+      margin-bottom:10px;
+      text-transform:uppercase;
+    }
+    address{
+      @include responsive-font(3vw, 14px, 16px);
+      color: lighten($darker-grey, 30);
+      font-weight: 300;
+      text-transform:capitalize;
+      line-height: 1.5;
+    }
+  }
+
+
+}
+
+@keyframes logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}

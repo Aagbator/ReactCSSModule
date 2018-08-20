@@ -1,5 +1,8 @@
 .container {
-  padding: 0.01em 60px; }
+  padding: 0.01em 30px; }
+  @media (min-width: 992px) {
+    .container {
+      padding: 0.01em 60px; } }
 
 .row::after {
   content: "";
@@ -23,7 +26,7 @@
   z-index: 9;
   transform: translateX(-150px);
   overflow-x: hidden; }
-  @media (min-width: 768px) {
+  @media (min-width: 992px) {
     .navigation {
       transform: translateX(0); } }
   .navigation ul {
@@ -32,12 +35,16 @@
     padding: 0; }
     .navigation ul li .link, .navigation ul li .brand, .navigation ul li .socials {
       padding: 0.75rem 0.5rem; }
-      @media (min-width: 768px) {
+      @media (min-width: 992px) {
         .navigation ul li .link, .navigation ul li .brand, .navigation ul li .socials {
           min-height: calc(100vh / 7); } }
-    .navigation ul li .link:hover, .navigation ul li .brand:hover {
-      cursor: pointer;
-      background-color: #036; }
+      .navigation ul li .link.link-active, .navigation ul li .brand.link-active, .navigation ul li .socials.link-active {
+        border-left: 5px solid #bbdefb; }
+    .navigation ul li .link, .navigation ul li .brand {
+      border-left: 5px solid rgba(255, 255, 255, 0.1); }
+      .navigation ul li .link:hover, .navigation ul li .brand:hover {
+        cursor: pointer;
+        border-left: 5px solid #bbdefb; }
     .navigation ul li .brand {
       background-color: #fff; }
     .navigation ul li .link {
@@ -81,9 +88,9 @@
         border: 2px solid transparent;
         transition: all 0.5s; }
         .navigation ul li .socials a i {
-          color: #212121; }
+          color: #444; }
         .navigation ul li .socials a:hover {
-          border: 2px solid #212121;
+          border: 2px solid #444;
           cursor: pointer; }
     .navigation ul li p {
       margin-top: 15px;

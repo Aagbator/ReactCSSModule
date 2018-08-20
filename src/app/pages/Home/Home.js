@@ -5,6 +5,7 @@
 import React from 'react';
 import styles from './Home.css';
 import patner from '../../../assets/images/partners/partner.png';
+import about from '../../../assets/icons/about.png';
 import iamswifta from '../../../assets/images/iamswifta.png';
 
 export default class Home extends React.Component{
@@ -44,7 +45,7 @@ export default class Home extends React.Component{
                     </div>
                 </section>
                 <section className={styles['intro-container']}>
-                    <div class={styles.container}>
+                    <div className={styles.container}>
                         <div className={styles.row}>
                             <div className={styles['col-1']}>
                                 <div className={styles['img-container']}>
@@ -61,48 +62,49 @@ export default class Home extends React.Component{
                     </div>
                 </section>
                 <section className={styles['services-container']}>
-                    <div className={styles.row}>
-                            <div className={styles['col-1']}>
-                               <h2>Our services</h2>
-                                <p>We are a modern company, committed to promote the development of our customers and their
-                                    business from the technology's side, providing them access to a global market and supporting
-                                    its operations through tailored solutions.
-                                </p>
-                            </div>
-                            <div className={styles['col-2']}>
-                                <div className={styles.content}>
-                                    <div className={styles.row}>
-                                        <div className={styles.block}>
-                                            {/*<img src={logo} />*/}
-                                            <h5>Business Analysis</h5>
-                                            <p>We are a modern company, committed to promote the development
-                                                of our customers and their business from the technology's side,
-                                            </p>
-                                        </div>
-                                        <div className={styles.block}>
-                                            {/*<img src={logo} />*/}
-                                            <h5>Business Analysis</h5>
-                                            <p>We are a modern company, committed to promote the development
-                                                of our customers and their business from the technology's side,
-                                            </p>
-                                        </div>
+                        <div className={styles['col-1']}>
+                           <h2>Our services</h2>
+                            <p>We are a modern company, committed to promote the development of our customers and their
+                                business from the technology's side, providing them access to a global market and supporting
+                                its operations through tailored solutions.
+                            </p>
+                        </div>
+                        <div className={styles['col-2']}>
+                            <div className={styles['block-container']}>
+                                <div className={styles.block}>
+                                    <div className={styles['img-container']}>
+                                        <img alt="logo" src={about} />
                                     </div>
-                                    <div className={styles.row}>
-                                        <div className={styles.block}>
-                                            {/*<img src={logo} />*/}
-                                            <h5>Business Analysis</h5>
-                                            <p>We are a modern company, committed to promote the development
-                                                of our customers and their business from the technology's side,
-                                            </p>
-                                        </div>
-                                        <div className={styles.block}>
-                                            {/*<img src={logo} />*/}
-                                            <h5>Business Analysis</h5>
-                                            <p>We are a modern company, committed to promote the development
-                                                of our customers and their business from the technology's side,
-                                            </p>
-                                        </div>
+                                    <h5>Business Analysis</h5>
+                                    <p>We are a modern company, committed to promote the development
+                                        of our customers and their business from the technology's side,
+                                    </p>
+                                </div>
+                                <div className={styles.block}>
+                                    <div className={styles['img-container']}>
+                                        <img alt="logo" src={about} />
                                     </div>
+                                    <h5>Business Analysis</h5>
+                                    <p>We are a modern company, committed to promote the development
+                                        of our customers and their business from the technology's side,
+                                    </p>
+                                </div>
+                                <div className={styles.block}>
+                                    <div className={styles['img-container']}>
+                                        <img alt="logo" src={about} />
+                                    </div>
+                                    <h5>Project Management</h5>
+                                    <p>We provide solutions to technical issues and ensure the delivered solution meets the technical specifications and design requirement.
+                                    </p>
+                                </div>
+                                <div className={styles.block}>
+                                    <div className={styles['img-container']}>
+                                        <img alt="logo" src={about} />
+                                    </div>
+                                    <h5>Business Analysis</h5>
+                                    <p>We are a modern company, committed to promote the development
+                                        of our customers and their business from the technology's side,
+                                    </p>
                                 </div>
                             </div>
                         </div>

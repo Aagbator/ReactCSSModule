@@ -5,7 +5,7 @@ import React from 'react'
 import { Route, Switch } from 'react-router-dom'
 import styles from './Main.css';
 import Navigation from './components/Nav/Navigation';
-
+import Footer from './components/Footer/Footer';
 
 import Home from './pages/Home/Home';
 import About from './pages/About/About';
@@ -24,6 +24,7 @@ export default class Main extends React.Component {
                         {/* <Route path='*' component={NotFound} /> */}
                     </Switch>
                 </section>
+                <Footer />
             </div>
         )
     }

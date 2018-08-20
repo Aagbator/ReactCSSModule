@@ -9,7 +9,7 @@
     min-height: 100vh;
     height: 100%;
     display: block; }
-    @media (min-width: 768px) {
+    @media (min-width: 992px) {
       .wrapper .main_section {
         margin-left: 150px;
         width: calc(100% - 150px);

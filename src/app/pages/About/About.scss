@@ -1,20 +1,256 @@
 @import '../../../assets/sass/variable';
+@import '../../../assets/sass/helpers';
 
-.about {
-  margin: 0;
-  padding: 0;
-  font-family: $main-ff;
-  min-height: 100vh;
-  height: 100%;
-  background-color: beige;
-  position: relative;
-  color: #fff;
-  background-image: url(https://images.fastcompany.net/image/upload/w_1280,f_auto,q_auto,fl_lossy/wp-cms/uploads/2018/01/p-1-tesla-recruiter-shares-six-strategies-to-land-a-job-at-the-company.jpg);
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: cover;
-  .main_section {
-    height: 200px;
-    width: 50px;
+.about{
+  color:#000;
+  .about-container{
+    position: relative;
+    color: #fff;
+    background-color: #000000;
+    // background-image: url(../../../assets/images/bg.jpg) left top, linear-gradient(#eb01a5, #d13531);
+    background: #065785;
+    background: url(../../../assets/images/bg.jpg); /* fallback */
+    background: linear-gradient(to bottom,rgba(9,87,133, 0.4), rgba(0,0,0, 0.8)),url(../../../assets/images/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    min-height:30vh;
+    height:30%;
+    text-align:center;
+    .content{
+      @media #{$min992} {
+        min-height:40vh;
+        height:40%;
+        padding: 10vh 14vw;
+        margin:0 auto;
+      }
+
+      padding: 8vh 6vw;
+
+      h1{
+        @include responsive-font(3vw, 24px, 60px);
+        font-weight:600;
+        text-transform: uppercase;
+        @media #{$min992} {
+          margin-bottom:20px;
+        }
+        line-height:1.35;
+        margin-bottom:20px;
+      }
+      p{
+        @include responsive-font(3vw, 16px, 18px);
+        font-family: $second-ff;
+        font-weight:200;
+        line-height:1.5;
+        @media #{$min992} {
+          padding: 0 10%;
+        }
+      }
+    }
   }
+
+  .intro-container{
+    text-align:center;
+    min-height:40vh;
+    padding:5rem 0;
+    .col-1{
+      @media #{$min992} {
+        float:right;
+        width: 50%;
+      }
+      width: 100%;
+      .img-container{
+        height:200px;
+        @media #{$min992} {
+          height:400px;
+        }
+        height:250px;
+        box-sizing:border-box;
+        img{
+          height:100%;
+          width:auto;
+        }
+      }
+    }
+    .col-2 {
+      @media #{$min992} {
+        float:left;
+        width: 50%;
+      }
+      text-align:left;
+      h2{
+        @media #{$min992} {
+          margin:2rem 0 ;
+        }
+        //color: $light-blue;
+        margin:1rem 0 ;
+        @include responsive-font(3vw, 21px, 28px);
+        font-weight:600;
+        line-height:1.5;
+      }
+      p{
+        @include responsive-font(3vw, 16px, 18px);
+        font-weight:200;
+        line-height:1.5;
+        color:$grey-text;
+      }
+    }
+  }
+
+  .strategy-container{
+    background-color: $darker-grey;
+    text-align:center;
+    min-height:40vh;
+    padding:5rem 0;
+    .col-1{
+      @media #{$min992} {
+        width: 50%;
+      }
+      width: 100%;
+      .img-container{
+        height:200px;
+        @media #{$min992} {
+          height:400px;
+        }
+        height:250px;
+        box-sizing:border-box;
+        img{
+          height:100%;
+          width:auto;
+        }
+      }
+    }
+    .col-2 {
+      color:#fff;
+      @media #{$min992} {
+        width: 50%;
+      }
+      text-align:left;
+      h2{
+        @media #{$min992} {
+          margin:2rem 0 ;
+        }
+        //color: $light-blue;
+        margin:1rem 0rem ;
+        @include responsive-font(3vw, 21px, 28px);
+        font-weight:600;
+        line-height:1.5;
+      }
+      p{
+        @include responsive-font(3vw, 16px, 18px);
+        font-weight:200;
+        line-height:1.5;
+      }
+    }
+  }
+
+  .team-container{
+    text-align:center;
+    min-height:40vh;
+    padding : 2rem 0rem 1rem ;
+    @media #{$min992}{
+      padding:3rem 0 8rem;
+    }
+    header{
+      padding:10px 5vw;
+      @media #{$min992}{
+        padding:10px 15vw;
+      }
+      h2{
+        text-transform:uppercase;
+        @media #{$min992}{
+          margin : 1rem 0rem ;
+        }
+        //color: $light-blue;
+        margin:2rem 0rem 1rem ;
+        @include responsive-font(3vw, 21px, 28px);
+        font-weight:600;
+        line-height:1.5;
+      }
+      p{
+        @include responsive-font(3vw, 14px, 18px);
+        line-height:1.5;
+        color:$darker-grey;
+        @media #{$min992}{
+          margin : 1rem 0rem 3rem ;
+        }
+      }
+    }
+
+    .team-profiles{
+      display:flex;
+      flex-wrap: wrap;
+      flex-direction:row;
+      justify-content: center;
+
+      .card{
+        text-align:center;
+        margin: 1.5%;
+        padding:2rem;
+        transition: 0.2s all;
+        box-shadow: 0 1px 3px 0 rgba(0,0,0,0.1);
+        &:hover{
+          box-shadow: 0 5px 8px 4px rgba(0,0,0,0.1);
+          .socials{
+            .linkedin{
+              color:$linkedin;
+            }
+            .twitter{
+              color:$twitter;
+            }
+          }
+        }
+        //border:1px solid $lighter-grey;
+        @media #{$min992} {
+          padding:20px 10px;
+          flex: 0 1 22%;
+        }
+        @media #{$max991} {
+          flex: 1 0 30%;
+        }
+        @media #{$max767} {
+          flex: 0 0 45%;
+        }
+        @media #{$max543} {
+          flex: 0 0 80%;
+          margin:10px 0;
+        }
+        .img-container{
+          height:100px;
+          img{
+            height:100%;
+            width:auto;
+            border-radius: 100%;
+          }
+        }
+        h2{
+          text-transform: capitalize;
+          font-weight:400;
+          @include responsive-font(3vw, 12px, 16px);
+          margin:0.5rem 0;
+          color: #fff;
+          color:$darker-grey;
+        }
+        p{
+          @include responsive-font(3vw, 9px, 12px);
+          text-transform: capitalize;
+          font-weight:200;
+          line-height:1.5;
+          color:$darker-grey;
+        }
+        .socials{
+          margin:1rem 0;
+          a{
+            color:lighten($darker-grey,50);
+            display:inline-block;
+            i{
+              font-size:1.5rem;
+            }
+            margin:0px 5px;
+          }
+        }
+      }
+    }
+  }
+
 }
