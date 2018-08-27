@@ -29,14 +29,14 @@
         }
         padding:0.75rem 0.5rem;
         &.link-active{
-          border-left: 5px solid $lighter-blue;
+          border-left: 3px solid $lighter-blue;
         }
       }
       .link, .brand{
-        border-left: 5px solid rgba(255,255,255,.1);
+        border-left: 3px solid rgba(255,255,255,.1);
         &:hover{
           cursor: pointer;
-          border-left: 5px solid $lighter-blue;
+          border-left: 3px solid $lighter-blue;
         }
       }
       .brand{

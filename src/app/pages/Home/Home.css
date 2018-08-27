@@ -200,7 +200,7 @@
           .home .intro-container .col-2 p {
             font-size: 21px; } }
   .home .services-container {
-    background: url("../../../assets/images/bg2.jpg") no-repeat;
+    background: url("../../../assets/images/trainings/bg2.jpg") no-repeat;
     background-size: cover;
     min-height: 45vh;
     display: flex;

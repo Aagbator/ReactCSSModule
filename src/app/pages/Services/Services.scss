@@ -1,9 +1,9 @@
 @import '../../../assets/sass/variable';
 @import '../../../assets/sass/helpers';
 
-.about{
+.services{
   color:#000;
-  .about-intro{
+  .services-intro{
     position: relative;
     color: #fff;
     background-color: #000000;
@@ -49,7 +49,7 @@
     }
   }
 
-  .intro-container{
+  .section-1, .section-3, .section-5{
     text-align:center;
     min-height:40vh;
     padding:5rem 0;
@@ -62,7 +62,7 @@
       .img-container{
         height:200px;
         @media #{$min992} {
-          height:400px;
+          height:300px;
         }
         height:250px;
         box-sizing:border-box;
@@ -74,13 +74,14 @@
     }
     .col-2 {
       @media #{$min992} {
+        padding-top:1rem;
         float:left;
         width: 50%;
       }
       text-align:left;
       h2{
         @media #{$min992} {
-          margin:2rem 0 ;
+          margin:1rem 0 ;
         }
         //color: $light-blue;
         margin:1rem 0 ;
@@ -97,8 +98,15 @@
     }
   }
 
-  .strategy-container{
-    background-color: $darker-grey;
+  .section-2{
+    background-color: $lighter-blue;
+  }
+
+  .section-4{
+    background-color: $lighter-grey-bg;
+  }
+
+  .section-2, .section-4{
     text-align:center;
     min-height:40vh;
     padding:5rem 0;
@@ -110,7 +118,7 @@
       .img-container{
         height:200px;
         @media #{$min992} {
-          height:400px;
+          height:300px;
         }
         height:250px;
         box-sizing:border-box;
@@ -121,14 +129,15 @@
       }
     }
     .col-2 {
-      color:#fff;
+      color:$grey-text;
+      padding-top:1rem;
       @media #{$min992} {
         width: 50%;
       }
       text-align:left;
       h2{
         @media #{$min992} {
-          margin:2rem 0 ;
+          margin:1rem 0 ;
         }
         //color: $light-blue;
         margin:1rem 0rem ;
@@ -144,114 +153,5 @@
     }
   }
 
-  .team-container{
-    text-align:center;
-    min-height:40vh;
-    padding : 2rem 0rem 1rem ;
-    @media #{$min992}{
-      padding:3rem 0 8rem;
-    }
-    header{
-      padding:10px 5vw;
-      @media #{$min992}{
-        padding:10px 15vw;
-      }
-      h2{
-        text-transform:uppercase;
-        font-weight: 400;
-        margin:2rem 0rem 1rem ;
-        @include responsive-font(3vw, 21px, 28px);
-        line-height:1.5;
-        @media #{$min992}{
-          margin : 1rem 0rem ;
-        }
-        //color: $light-blue;
-
-      }
-      p{
-        @include responsive-font(3vw, 14px, 18px);
-        line-height:1.5;
-        color:$darker-grey;
-        @media #{$min992}{
-          margin : 1rem 0rem 3rem ;
-        }
-      }
-    }
-
-    .team-profiles{
-      display:flex;
-      flex-wrap: wrap;
-      flex-direction:row;
-      justify-content: center;
-
-      .card{
-        text-align:center;
-        margin: 1.5%;
-        padding:2rem;
-        transition: 0.2s all;
-        box-shadow: 0 1px 3px 0 rgba(0,0,0,0.1);
-        &:hover{
-          box-shadow: 0 5px 8px 4px rgba(0,0,0,0.1);
-          .socials{
-            .linkedin{
-              color:$linkedin;
-            }
-            .twitter{
-              color:$twitter;
-            }
-          }
-        }
-        //border:1px solid $lighter-grey;
-        @media #{$min992} {
-          padding:20px 10px;
-          flex: 0 1 22%;
-        }
-        @media #{$max991} {
-          flex: 1 0 30%;
-        }
-        @media #{$max767} {
-          flex: 0 0 45%;
-        }
-        @media #{$max543} {
-          flex: 0 0 80%;
-          margin:10px 0;
-        }
-        .img-container{
-          height:100px;
-          img{
-            height:100%;
-            width:auto;
-            border-radius: 100%;
-          }
-        }
-        h2{
-          text-transform: capitalize;
-          font-weight:400;
-          @include responsive-font(3vw, 12px, 16px);
-          margin:0.5rem 0;
-          color: #fff;
-          color:$darker-grey;
-        }
-        p{
-          @include responsive-font(3vw, 9px, 12px);
-          text-transform: capitalize;
-          font-weight:200;
-          line-height:1.5;
-          color:$darker-grey;
-        }
-        .socials{
-          margin:1rem 0;
-          a{
-            color:lighten($darker-grey,50);
-            display:inline-block;
-            i{
-              font-size:1.5rem;
-            }
-            margin:0px 5px;
-          }
-        }
-      }
-    }
-  }
 
 }

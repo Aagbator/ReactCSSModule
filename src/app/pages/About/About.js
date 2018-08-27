@@ -15,7 +15,7 @@ export default class About extends React.Component{
             {name: 'Henry Afolabi David', position: 'Chief Technology Officer', img:'henry david.jpg', linkedin: '', twitter: ''},
             {name: 'Ayotunde Farinu', position: 'Chief Operating Officer', img:'Ayotunde.jpg', linkedin: '', twitter: ''},
             {name: 'Modupe Ladejebi', position: 'Head Of Products', img:'Modupe ladejebi.jpg', linkedin: '', twitter: ''},
-            {name: 'Kayode Otegbeye', position: 'Kayode Otegbeye', img:'kayode.jpg', linkedin: '', twitter: ''},
+            {name: 'Kayode Otegbeye', position: 'Managing Consultant', img:'kayode.jpg', linkedin: '', twitter: ''},
             {name: 'Adebola Owojobi', position: 'Head, Business Development', img:'Adebola.jpg', linkedin: '', twitter: ''},
             {name: 'Anthony Agbator', position: 'Head of Development', img:'Anthony.jpg', linkedin: '', twitter: ''}
         ];
@@ -36,7 +36,7 @@ export default class About extends React.Component{
 
         return(
             <section className={styles.about}>
-                <section className={styles['about-container']}>
+                <section className={styles['about-intro']}>
                     <div className={styles.content}>
                         <h1>About</h1>
                         <p>

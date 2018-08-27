@@ -39,12 +39,12 @@
         .navigation ul li .link, .navigation ul li .brand, .navigation ul li .socials {
           min-height: calc(100vh / 7); } }
       .navigation ul li .link.link-active, .navigation ul li .brand.link-active, .navigation ul li .socials.link-active {
-        border-left: 5px solid #bbdefb; }
+        border-left: 3px solid #bbdefb; }
     .navigation ul li .link, .navigation ul li .brand {
-      border-left: 5px solid rgba(255, 255, 255, 0.1); }
+      border-left: 3px solid rgba(255, 255, 255, 0.1); }
       .navigation ul li .link:hover, .navigation ul li .brand:hover {
         cursor: pointer;
-        border-left: 5px solid #bbdefb; }
+        border-left: 3px solid #bbdefb; }
     .navigation ul li .brand {
       background-color: #fff; }
     .navigation ul li .link {

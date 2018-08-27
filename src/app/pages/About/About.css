@@ -14,7 +14,7 @@
 
 .about {
   color: #000; }
-  .about .about-container {
+  .about .about-intro {
     position: relative;
     color: #fff;
     background-color: #000000;
@@ -28,42 +28,42 @@
     min-height: 30vh;
     height: 30%;
     text-align: center; }
-    .about .about-container .content {
+    .about .about-intro .content {
       padding: 8vh 6vw; }
       @media (min-width: 992px) {
-        .about .about-container .content {
+        .about .about-intro .content {
           min-height: 40vh;
           height: 40%;
           padding: 10vh 14vw;
           margin: 0 auto; } }
-      .about .about-container .content h1 {
+      .about .about-intro .content h1 {
         font-size: 3vw;
         font-weight: 600;
         text-transform: uppercase;
         line-height: 1.35;
         margin-bottom: 20px; }
         @media (max-width: 800px) {
-          .about .about-container .content h1 {
+          .about .about-intro .content h1 {
             font-size: 24px; } }
         @media (min-width: 2000px) {
-          .about .about-container .content h1 {
+          .about .about-intro .content h1 {
             font-size: 60px; } }
         @media (min-width: 992px) {
-          .about .about-container .content h1 {
+          .about .about-intro .content h1 {
             margin-bottom: 20px; } }
-      .about .about-container .content p {
+      .about .about-intro .content p {
         font-size: 3vw;
         font-family: "Lato", sans-serif;
         font-weight: 200;
         line-height: 1.5; }
         @media (max-width: 533.33333px) {
-          .about .about-container .content p {
+          .about .about-intro .content p {
             font-size: 16px; } }
         @media (min-width: 600px) {
-          .about .about-container .content p {
+          .about .about-intro .content p {
             font-size: 18px; } }
         @media (min-width: 992px) {
-          .about .about-container .content p {
+          .about .about-intro .content p {
             padding: 0 10%; } }
   .about .intro-container {
     text-align: center;
@@ -94,7 +94,7 @@
       .about .intro-container .col-2 h2 {
         margin: 1rem 0;
         font-size: 3vw;
-        font-weight: 600;
+        font-weight: 400;
         line-height: 1.5; }
         @media (min-width: 992px) {
           .about .intro-container .col-2 h2 {
@@ -145,7 +145,7 @@
       .about .strategy-container .col-2 h2 {
         margin: 1rem 0rem;
         font-size: 3vw;
-        font-weight: 600;
+        font-weight: 400;
         line-height: 1.5; }
         @media (min-width: 992px) {
           .about .strategy-container .col-2 h2 {
@@ -180,19 +180,19 @@
           padding: 10px 15vw; } }
       .about .team-container header h2 {
         text-transform: uppercase;
+        font-weight: 400;
         margin: 2rem 0rem 1rem;
         font-size: 3vw;
-        font-weight: 600;
         line-height: 1.5; }
-        @media (min-width: 992px) {
-          .about .team-container header h2 {
-            margin: 1rem 0rem; } }
         @media (max-width: 700px) {
           .about .team-container header h2 {
             font-size: 21px; } }
         @media (min-width: 933.33333px) {
           .about .team-container header h2 {
             font-size: 28px; } }
+        @media (min-width: 992px) {
+          .about .team-container header h2 {
+            margin: 1rem 0rem; } }
       .about .team-container header p {
         font-size: 3vw;
         line-height: 1.5;
