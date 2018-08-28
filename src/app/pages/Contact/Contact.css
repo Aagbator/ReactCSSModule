@@ -1,0 +1,190 @@
+.container {
+  padding: 0.01em 30px; }
+  @media (min-width: 992px) {
+    .container {
+      padding: 0.01em 60px; } }
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table; }
+
+[class*="col-"] {
+  float: left; }
+
+.contact {
+  color: #000; }
+  .contact .contact-intro {
+    position: relative;
+    color: #fff;
+    background-color: #000000;
+    background: #065785;
+    background: url(../../../assets/images/bg.jpg);
+    /* fallback */
+    background: linear-gradient(to bottom, rgba(9, 87, 133, 0.4), rgba(0, 0, 0, 0.8)), url(../../../assets/images/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    min-height: 30vh;
+    height: 30%;
+    text-align: center; }
+    .contact .contact-intro .content {
+      padding: 8vh 6vw; }
+      @media (min-width: 992px) {
+        .contact .contact-intro .content {
+          min-height: 40vh;
+          height: 40%;
+          padding: 10vh 14vw;
+          margin: 0 auto; } }
+      .contact .contact-intro .content h1 {
+        font-size: 3vw;
+        font-weight: 600;
+        text-transform: uppercase;
+        line-height: 1.35;
+        margin-bottom: 20px; }
+        @media (max-width: 800px) {
+          .contact .contact-intro .content h1 {
+            font-size: 24px; } }
+        @media (min-width: 2000px) {
+          .contact .contact-intro .content h1 {
+            font-size: 60px; } }
+        @media (min-width: 992px) {
+          .contact .contact-intro .content h1 {
+            margin-bottom: 20px; } }
+      .contact .contact-intro .content p {
+        font-size: 3vw;
+        font-family: "Lato", sans-serif;
+        font-weight: 200;
+        line-height: 1.5; }
+        @media (max-width: 533.33333px) {
+          .contact .contact-intro .content p {
+            font-size: 16px; } }
+        @media (min-width: 600px) {
+          .contact .contact-intro .content p {
+            font-size: 18px; } }
+        @media (min-width: 992px) {
+          .contact .contact-intro .content p {
+            padding: 0 10%; } }
+  .contact .contact-section {
+    min-height: 40vh;
+    padding: 4rem 0; }
+    .contact .contact-section .col-1 {
+      width: 100%; }
+      .contact .contact-section .col-1 .radio-group {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin-top: 20px;
+        /* The container */ }
+        .contact .contact-section .col-1 .radio-group .radio-container {
+          flex: 0 1 40%;
+          margin: 10px;
+          position: relative;
+          cursor: pointer;
+          font-size: 22px;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+          /* Hide the browser's default radio button */
+          /* Create a custom radio button */
+          /* On mouse-over, add a grey background color */ }
+          @media (min-width: 992px) {
+            .contact .contact-section .col-1 .radio-group .radio-container {
+              flex: 0 1 35%; } }
+          .contact .contact-section .col-1 .radio-group .radio-container .img-container {
+            position: absolute;
+            width: 100%;
+            top: 0;
+            text-align: center;
+            height: 60px;
+            padding: 20px 0 5px;
+            box-sizing: border-box; }
+            @media (min-width: 992px) {
+              .contact .contact-section .col-1 .radio-group .radio-container .img-container {
+                height: 60px; } }
+            .contact .contact-section .col-1 .radio-group .radio-container .img-container img {
+              height: 100%;
+              width: auto; }
+          .contact .contact-section .col-1 .radio-group .radio-container input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+            /* When the radio button is checked, add a blue background */
+            /* Show the indicator (dot/circle) when checked */ }
+            .contact .contact-section .col-1 .radio-group .radio-container input:checked ~ .checkmark {
+              border: 2px solid #bbdefb;
+              transition: 0.2s all;
+              box-shadow: 0 20px 30px 0 rgba(36, 98, 104, 0.16); }
+              .contact .contact-section .col-1 .radio-group .radio-container input:checked ~ .checkmark .text {
+                color: #000; }
+            .contact .contact-section .col-1 .radio-group .radio-container input:checked ~ .checkmark:after {
+              display: block; }
+          .contact .contact-section .col-1 .radio-group .radio-container .checkmark {
+            position: relative;
+            top: 0;
+            left: 0;
+            height: 100px;
+            background-color: #fff;
+            border: 2px solid #ededed;
+            border-radius: 5px;
+            text-align: center;
+            /* Create the indicator (the dot/circle - hidden when not checked) */
+            /* Style the indicator (dot/circle) */ }
+            .contact .contact-section .col-1 .radio-group .radio-container .checkmark .text {
+              position: absolute;
+              text-transform: uppercase;
+              left: 0;
+              width: 100%;
+              z-index: 9999;
+              font-size: 3vw;
+              bottom: 10px;
+              color: #88949e;
+              text-align: center; }
+              @media (max-width: 300px) {
+                .contact .contact-section .col-1 .radio-group .radio-container .checkmark .text {
+                  font-size: 9px; } }
+              @media (min-width: 400px) {
+                .contact .contact-section .col-1 .radio-group .radio-container .checkmark .text {
+                  font-size: 12px; } }
+            .contact .contact-section .col-1 .radio-group .radio-container .checkmark:after {
+              content: "";
+              position: absolute;
+              display: none; }
+            .contact .contact-section .col-1 .radio-group .radio-container .checkmark:after {
+              content: '\2713';
+              top: 9px;
+              left: 9px;
+              color: #bbdefb;
+              border-radius: 30%; }
+          .contact .contact-section .col-1 .radio-group .radio-container:hover input ~ .checkmark {
+            border: 2px solid #bbdefb; }
+      @media (min-width: 992px) {
+        .contact .contact-section .col-1 {
+          width: 50%; } }
+      .contact .contact-section .col-1 .img-container {
+        height: 200px; }
+    .contact .contact-section .col-2 {
+      color: #333333;
+      padding-top: 1rem;
+      width: 100%;
+      text-align: left; }
+      .contact .contact-section .col-2 .contact .input-group {
+        width: 100%;
+        margin-bottom: 10px; }
+        .contact .contact-section .col-2 .contact .input-group label {
+          display: block;
+          font-weight: 400; }
+        .contact .contact-section .col-2 .contact .input-group input, .contact .contact-section .col-2 .contact .input-group textarea {
+          -webkit-appearance: none;
+          width: 100%;
+          font-size: 18px;
+          border: 3px solid #e8edf1;
+          padding: 1.01em 30px;
+          border-radius: 10px;
+          transition: all .3s;
+          transition-timing-function: ease-in;
+          transition-delay: 0s; }
+      @media (min-width: 992px) {
+        .contact .contact-section .col-2 {
+          width: 50%; } }

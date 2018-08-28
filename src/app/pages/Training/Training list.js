@@ -7,7 +7,7 @@ let TrainingList = [
         title: 'Google Digital Skills Training',
         content: 'This is an industry focused training event.',
         img:'victor.jpeg',
-        logo:'logo.svg'
+        logo:'google.png'
     },
     {
         title: 'Google Apps Training',

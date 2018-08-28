@@ -12,6 +12,7 @@ import About from './pages/About/About';
 import Services from './pages/Services/Services';
 import Products from './pages/Products/Products';
 import Training from './pages/Training/Training';
+import Contact from './pages/Contact/Contact';
 
 export default class Main extends React.Component {
 
@@ -30,6 +31,7 @@ export default class Main extends React.Component {
                         <Route path="/services" component={Services}/>
                         <Route path="/products" component={Products}/>
                         <Route path="/training" component={Training}/>
+                        <Route path="/contact" component={Contact}/>
                         {/* <Route path='*' component={NotFound} /> */}
                     </Switch>
                 </section>
