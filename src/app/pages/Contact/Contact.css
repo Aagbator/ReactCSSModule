@@ -70,6 +70,14 @@
     padding: 4rem 0; }
     .contact .contact-section .col-1 {
       width: 100%; }
+      .contact .contact-section .col-1 h6 {
+        font-size: 3vw; }
+        @media (max-width: 400px) {
+          .contact .contact-section .col-1 h6 {
+            font-size: 12px; } }
+        @media (min-width: 600px) {
+          .contact .contact-section .col-1 h6 {
+            font-size: 18px; } }
       .contact .contact-section .col-1 .radio-group {
         display: flex;
         flex-wrap: wrap;
@@ -115,7 +123,7 @@
             .contact .contact-section .col-1 .radio-group .radio-container input:checked ~ .checkmark {
               border: 2px solid #bbdefb;
               transition: 0.2s all;
-              box-shadow: 0 20px 30px 0 rgba(36, 98, 104, 0.16); }
+              box-shadow: 0 10px 20px 0 rgba(36, 98, 104, 0.16); }
               .contact .contact-section .col-1 .radio-group .radio-container input:checked ~ .checkmark .text {
                 color: #000; }
             .contact .contact-section .col-1 .radio-group .radio-container input:checked ~ .checkmark:after {
@@ -169,22 +177,54 @@
       padding-top: 1rem;
       width: 100%;
       text-align: left; }
-      .contact .contact-section .col-2 .contact .input-group {
-        width: 100%;
-        margin-bottom: 10px; }
-        .contact .contact-section .col-2 .contact .input-group label {
+      .contact .contact-section .col-2 .contact {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 30px; }
+        .contact .contact-section .col-2 .contact .input-group {
+          margin-bottom: 20px; }
+          .contact .contact-section .col-2 .contact .input-group label {
+            display: block;
+            font-weight: 400; }
+          .contact .contact-section .col-2 .contact .input-group input, .contact .contact-section .col-2 .contact .input-group textarea {
+            display: inline-block;
+            -webkit-appearance: none;
+            width: 100%;
+            font-size: 18px;
+            border: 3px solid #e8edf1;
+            padding: 1em 30px;
+            border-radius: 10px;
+            transition: all .3s;
+            transition-timing-function: ease-in;
+            transition-delay: 0s; }
+            .contact .contact-section .col-2 .contact .input-group input:focus, .contact .contact-section .col-2 .contact .input-group textarea:focus {
+              outline: none;
+              border: 3px solid #bbdefb; }
+          .contact .contact-section .col-2 .contact .input-group.col-half {
+            flex: 0 1 100%; }
+            @media (min-width: 992px) {
+              .contact .contact-section .col-2 .contact .input-group.col-half {
+                flex: 0 1 49%; } }
+          .contact .contact-section .col-2 .contact .input-group.col-full {
+            flex: 0 1 100%; }
+        .contact .contact-section .col-2 .contact button {
           display: block;
-          font-weight: 400; }
-        .contact .contact-section .col-2 .contact .input-group input, .contact .contact-section .col-2 .contact .input-group textarea {
-          -webkit-appearance: none;
-          width: 100%;
-          font-size: 18px;
-          border: 3px solid #e8edf1;
-          padding: 1.01em 30px;
-          border-radius: 10px;
-          transition: all .3s;
-          transition-timing-function: ease-in;
-          transition-delay: 0s; }
+          width: 80%;
+          margin: 10px auto;
+          padding: 1em;
+          color: #ffffff;
+          text-transform: uppercase;
+          font-size: 3vw;
+          background-color: #FF6265;
+          border: none;
+          border-radius: 5px; }
+          @media (max-width: 366.66667px) {
+            .contact .contact-section .col-2 .contact button {
+              font-size: 11px; } }
+          @media (min-width: 466.66667px) {
+            .contact .contact-section .col-2 .contact button {
+              font-size: 14px; } }
       @media (min-width: 992px) {
         .contact .contact-section .col-2 {
           width: 50%; } }

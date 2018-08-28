@@ -59,19 +59,20 @@ export default class Contact extends React.Component{
                             </div>
                             <div className={styles['col-2']}>
                                 <div className={styles.contact}>
-                                    <div className={styles['input-group']}>
-                                        <input placeholder="Name" type="text" />
+                                    <div className={`${styles['input-group']} ${styles['col-full']}`}>
+                                        <input placeholder="Name" name="name" type="text" />
                                     </div>
-                                    <div className={styles['input-group']}>
-                                        <input placeholder="Email" type="text" />
+                                    <div className={`${styles['input-group']} ${styles['col-half']}`}>
+                                        <input placeholder="Email" name="email" type="text" />
                                     </div>
-                                    <div className={styles['input-group']}>
-                                        <input placeholder="Phone" type="text" />
+                                    <div className={`${styles['input-group']} ${styles['col-half']}`}>
+                                        <input placeholder="Phone" name="phone" type="text" />
                                     </div>
-                                    <div className={styles['input-group']}>
-                                        <textarea rows={5} placeholder="Phone" type="text">
-
-                                        </textarea>
+                                    <div className={`${styles['input-group']} ${styles['col-full']}`}>
+                                        <textarea rows={5} placeholder="Message" name="message" type="text"></textarea>
+                                    </div>
+                                    <div className={`${styles['input-group']} ${styles['col-full']}`}>
+                                        <button>Submit</button>
                                     </div>
                                 </div>
                             </div>
