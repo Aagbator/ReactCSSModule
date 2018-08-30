@@ -1,0 +1,85 @@
+@import '../../../assets/sass/variable';
+@import '../../../assets/sass/helpers';
+
+.navigation{
+  position: fixed;
+  height:60px;
+  box-sizing:border-box;
+  z-index:999;
+  width:100%;
+  top: 0px;
+  box-shadow: 1px 0px 20px rgba(0,0,0,0.08);
+  padding:15px;
+  background: #fff;
+  color:#000;
+  @media #{$min992} {
+    display: none;
+  }
+  .logo{
+    display:inline-block;
+    height:30px;
+    img{
+      height:100%;
+      width:auto;
+    }
+  }
+  .action-menu{
+    width: 50px;
+    height: 40px;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    float: right;
+    transform: rotate(0deg);
+    transition: .5s ease-in-out;
+    cursor: pointer;
+    .bar {
+      display: block;
+      position: absolute;
+      height: 4px;
+      width: 100%;
+      background: $darker-grey;
+      border-radius: 2px;
+      opacity: 1;
+      left: 0;
+      transform: rotate(0deg);
+      transition: .25s ease-in-out;
+      &:nth-child(1){
+        top: 0px;
+      }
+      &:nth-child(2){
+        top: 15px;
+      }
+      &:nth-child(3){
+        top: 30px;
+      }
+    }
+  }
+
+  .open{
+    .bar{
+      &:nth-child(1){
+        top: 15px;
+        transform: rotate(135deg)
+      }
+      &:nth-child(2){
+        opacity: 0;
+        left: -60px;
+      }
+      &:nth-child(3){
+        top: 15px;
+        transform: rotate(-135deg);
+      }
+    }
+  }
+
+
+}
+
+
+.nav-color-1{  background-color: $nav-color-1 }
+
+@keyframes logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}

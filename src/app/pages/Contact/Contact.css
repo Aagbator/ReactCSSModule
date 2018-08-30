@@ -228,3 +228,7 @@
       @media (min-width: 992px) {
         .contact .contact-section .col-2 {
           width: 50%; } }
+  .contact .map {
+    position: relative;
+    min-height: 400px;
+    overflow: hidden; }

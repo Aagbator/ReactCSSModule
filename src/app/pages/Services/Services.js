@@ -79,7 +79,7 @@ export default class Services extends React.Component{
                             </div>
                             <div className={styles['col-2']}>
                                 <h2>Enterprise Software Solution</h2>
-                                <p>Our Enterprise software solution are built for (small to) large organizations. It continuously helps  to improve enterprise productivity and efficiency through business logic support functionality, ad also provides business-oriented tools such as online payment processing and automated billing systems for business functions including order processing, accounting and customer relationship management.
+                                <p>Our Enterprise software solution are built for (small to) large organizations. It continuously helps  to improve enterprise productivity and efficiency through business logic support functionality, and also provides business-oriented tools such as online payment processing and automated billing systems for business functions including order processing, accounting and customer relationship management.
                                 </p>
                             </div>
                         </div>

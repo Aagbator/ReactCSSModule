@@ -55,7 +55,7 @@
         font-size: 3vw;
         font-family: "Lato", sans-serif;
         font-weight: 200;
-        line-height: 1.5; }
+        line-height: 1.8; }
         @media (max-width: 533.33333px) {
           .products .products-intro .content p {
             font-size: 16px; } }
@@ -86,8 +86,7 @@
           height: 100%;
           width: auto; }
     .products .section-1 .col-2, .products .section-2 .col-2, .products .section-3 .col-2, .products .section-4 .col-2 {
-      text-align: left;
-      /* effect-1 styles */ }
+      text-align: left; }
       @media (min-width: 992px) {
         .products .section-1 .col-2, .products .section-2 .col-2, .products .section-3 .col-2, .products .section-4 .col-2 {
           padding-top: 5rem;
@@ -111,7 +110,7 @@
       .products .section-1 .col-2 p, .products .section-2 .col-2 p, .products .section-3 .col-2 p, .products .section-4 .col-2 p {
         font-size: 3vw;
         font-weight: 200;
-        line-height: 1.5;
+        line-height: 1.8;
         color: #333333; }
         @media (max-width: 533.33333px) {
           .products .section-1 .col-2 p, .products .section-2 .col-2 p, .products .section-3 .col-2 p, .products .section-4 .col-2 p {

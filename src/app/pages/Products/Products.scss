@@ -41,7 +41,7 @@
         @include responsive-font(3vw, 16px, 18px);
         font-family: $second-ff;
         font-weight:200;
-        line-height:1.5;
+        line-height:1.8;
         @media #{$min992} {
           padding: 0 10%;
         }
@@ -93,7 +93,7 @@
       p{
         @include responsive-font(3vw, 16px, 18px);
         font-weight:200;
-        line-height:1.5;
+        line-height:1.8;
         color:$grey-text;
       }
       .button{
@@ -122,38 +122,6 @@
         background-color:transparent;
         border-color: lighten($white, 70);
       }
-
-
-      /* effect-1 styles */
-      //
-      //.effect.effect-1 {
-      //  transition: all 0.2s linear 0s;
-      //
-      //  &:before {
-      //    content: "\f178";
-      //    font-family: FontAwesome;
-      //    font-size: 15px;
-      //    position: absolute;
-      //    display: flex;
-      //    align-items: center;
-      //    justify-content: center;
-      //    right: 0;
-      //    top: 0;
-      //    opacity: 0;
-      //    height: 100%;
-      //    width: 40px;
-      //    transition: all 0.2s linear 0s;
-      //  }
-      //
-      //  &:hover {
-      //    text-indent: -20px;
-      //
-      //    &:before {
-      //      opacity: 1;
-      //      text-indent: 0px;
-      //    }
-      //  }
-      //}
     }
   }
 

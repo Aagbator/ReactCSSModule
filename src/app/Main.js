@@ -4,7 +4,8 @@
 import React from 'react'
 import { Route, Switch } from 'react-router-dom'
 import styles from './Main.css';
-import Navigation from './components/Nav/Navigation';
+import TopNavigation from './components/Top-Nav/Top-Navigation';
+import SideNavigation from './components/Side-Nav/Navigation';
 import Footer from './components/Footer/Footer';
 
 import Home from './pages/Home/Home';
@@ -20,10 +21,19 @@ export default class Main extends React.Component {
         window.scrollTo(0,0); // Always keep page position at the top on load
     }
 
+    state = {
+        'open':false
+    }
+
+    toggleMenu = () => {
+        this.setState({'open': !this.state.open})
+    }
+
     render () {
         return (
             <div className={styles.wrapper}>
-                <Navigation />
+                <TopNavigation isOpen={this.state.open} toggleMenu={this.toggleMenu} />
+                <SideNavigation isOpen={this.state.open} toggleMenu={this.toggleMenu}  />
                 <section className={styles.main_section}>
                     <Switch>
                         <Route exact={true} path="/" component={Home}/>

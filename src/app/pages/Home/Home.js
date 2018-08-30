@@ -76,17 +76,9 @@ export default class Home extends React.Component{
                                         <img alt="logo" src={about} />
                                     </div>
                                     <h5>Business Analysis</h5>
-                                    <p>We are a modern company, committed to promote the development
-                                        of our customers and their business from the technology's side,
-                                    </p>
-                                </div>
-                                <div className={styles.block}>
-                                    <div className={styles['img-container']}>
-                                        <img alt="logo" src={about} />
-                                    </div>
-                                    <h5>Business Analysis</h5>
-                                    <p>We are a modern company, committed to promote the development
-                                        of our customers and their business from the technology's side,
+                                    <p>we are helping businesses recognize and analyze their needs
+                                        and deliver solutions to organizations strategically in a
+                                        rapidly changing business environments.
                                     </p>
                                 </div>
                                 <div className={styles.block}>
@@ -94,16 +86,28 @@ export default class Home extends React.Component{
                                         <img alt="logo" src={about} />
                                     </div>
                                     <h5>Project Management</h5>
-                                    <p>We provide solutions to technical issues and ensure the delivered solution meets the technical specifications and design requirement.
+                                    <p>we have helped organizations with initiating, planning, executing,
+                                        controlling, and closing the work to achieve specific goals and meet
+                                        specific success criteria at the specified time through experience,
+                                        to achieve project objectives.
                                     </p>
                                 </div>
                                 <div className={styles.block}>
                                     <div className={styles['img-container']}>
                                         <img alt="logo" src={about} />
                                     </div>
-                                    <h5>Business Analysis</h5>
-                                    <p>We are a modern company, committed to promote the development
-                                        of our customers and their business from the technology's side,
+                                    <h5>Software Application Support</h5>
+                                    <p>we have helped organizations with initiating, planning, executing, controlling, and closing the work to achieve specific goals and meet specific success criteria at the specified time through experience, to achieve project objectives..
+                                    </p>
+                                </div>
+                                <div className={styles.block}>
+                                    <div className={styles['img-container']}>
+                                        <img alt="logo" src={about} />
+                                    </div>
+                                    <h5>Enterprise Software Solution</h5>
+                                    <p>Our Enterprise software solution are built for (small to) large organizations.
+                                        It continuously helps to improve enterprise productivity and efficiency through business
+                                        logic support functionality
                                     </p>
                                 </div>
                             </div>

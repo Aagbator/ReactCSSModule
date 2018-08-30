@@ -80,8 +80,9 @@
         text-align: left;
         margin: 30px 1%;
         transition: 0.2s all;
+        position: relative;
         border: 1px solid #ededed;
-        padding-bottom: 10px;
+        padding-bottom: 50px;
         position: relative; }
         .trainings .trainings-container .trainings-cards .card .content {
           padding: 1rem; }
@@ -123,7 +124,7 @@
           font-size: 3vw;
           margin: 0.9rem 0 0.5rem;
           line-height: 1.5;
-          color: #212121; }
+          color: #333333; }
           @media (max-width: 400px) {
             .trainings .trainings-container .trainings-cards .card h2 {
               font-size: 12px; } }
@@ -134,10 +135,30 @@
           font-size: 3vw;
           font-weight: 300;
           line-height: 2;
-          color: #212121; }
+          color: #333333; }
           @media (max-width: 400px) {
             .trainings .trainings-container .trainings-cards .card p {
               font-size: 12px; } }
           @media (min-width: 466.66667px) {
             .trainings .trainings-container .trainings-cards .card p {
               font-size: 14px; } }
+        .trainings .trainings-container .trainings-cards .card .action-area {
+          position: absolute;
+          padding: 1rem;
+          width: 100%;
+          bottom: 0;
+          text-align: left; }
+          .trainings .trainings-container .trainings-cards .card .action-area .button {
+            display: inline-block;
+            font-size: 3vw;
+            margin: 0 auto;
+            padding: 0.5rem 1rem;
+            border: 1px solid #a0a0a0;
+            color: #212121;
+            text-decoration: none; }
+            @media (max-width: 400px) {
+              .trainings .trainings-container .trainings-cards .card .action-area .button {
+                font-size: 12px; } }
+            @media (min-width: 466.66667px) {
+              .trainings .trainings-container .trainings-cards .card .action-area .button {
+                font-size: 14px; } }

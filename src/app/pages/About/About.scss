@@ -91,7 +91,7 @@
       p{
         @include responsive-font(3vw, 16px, 18px);
         font-weight:200;
-        line-height:1.5;
+        line-height:1.8;
         color:$grey-text;
       }
     }
@@ -139,7 +139,7 @@
       p{
         @include responsive-font(3vw, 16px, 18px);
         font-weight:200;
-        line-height:1.5;
+        line-height:1.8;
       }
     }
   }
@@ -170,8 +170,9 @@
       }
       p{
         @include responsive-font(3vw, 14px, 18px);
+        font-weight: 200;
         line-height:1.5;
-        color:$darker-grey;
+        color:$grey-text;;
         @media #{$min992}{
           margin : 1rem 0rem 3rem ;
         }
@@ -191,7 +192,7 @@
         transition: 0.2s all;
         box-shadow: 0 1px 3px 0 rgba(0,0,0,0.1);
         &:hover{
-          box-shadow: 0 5px 8px 4px rgba(0,0,0,0.1);
+          //box-shadow: 0 5px 8px 4px rgba(0,0,0,0.1);
           .socials{
             .linkedin{
               color:$linkedin;
@@ -229,15 +230,14 @@
           font-weight:400;
           @include responsive-font(3vw, 12px, 16px);
           margin:0.5rem 0;
-          color: #fff;
-          color:$darker-grey;
+          color:$grey-text;
         }
         p{
           @include responsive-font(3vw, 9px, 12px);
           text-transform: capitalize;
           font-weight:200;
           line-height:1.5;
-          color:$darker-grey;
+          color:$grey-text;
         }
         .socials{
           margin:1rem 0;

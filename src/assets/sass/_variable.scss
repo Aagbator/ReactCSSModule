@@ -11,6 +11,7 @@ $heading-ff:'Oswald', sans-serif;
 $animation: ease-in-out;
 
 $navigation-width: 150px;
+$navigation-width-mobile: 200px;
 
 $max543 : only screen and (max-width: 543px);
 $min544 : only screen and (min-width: 544px);
@@ -43,11 +44,18 @@ $dark-grey-link: #444;
 $grey-text: #333333;
 $white: #ffffff;
 
+//
+//$nav-color-1 : #064B79;
+//$nav-color-2 : #065583;
+//$nav-color-3 : #066290;
+//$nav-color-4 : #447799;
+//$nav-color-5 : #ff6265;
 
-$nav-color-1 : #064B79;
-$nav-color-2 : #065583;
-$nav-color-3 : #066290;
-$nav-color-4 : #447799;
+
+$nav-color-1 : #fff;
+$nav-color-2 : #fff;
+$nav-color-3 : #fff;
+$nav-color-4 : #fff;
 $nav-color-5 : #ff6265;
 
 

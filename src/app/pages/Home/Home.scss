@@ -14,7 +14,10 @@
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
-    min-height:100vh;
+    @media #{$min768} {
+      min-height:100vh;
+    }
+    min-height:70vh;
     height:100%;
     text-align:center;
     .content{
@@ -204,7 +207,7 @@
     }
     .col-1{
       @media #{$min992} {
-        padding: 7rem 100px 7rem 60px;
+        padding: 7rem 150px 7rem 60px;
       }
       padding: 1rem 2rem;
       background: rgba(6, 85, 131, 0.5);
@@ -216,9 +219,12 @@
         color: #fff;
         margin:2rem 0 1rem;
         @include responsive-font(3vw, 28px, 35px);
-        font-weight:600;
+        font-weight:400;
+        text-transform:capitalize;
+        letter-spacing: 1px;
       }
       p{
+        font-family: $second-ff;
         @include responsive-font(3vw, 16px, 18px);
         font-weight:200;
         line-height:1.5;
@@ -276,7 +282,7 @@
             }
           }
           p{
-            @include responsive-font(3vw, 12px, 13px);
+            @include responsive-font(3vw, 14px, 13px);
             font-weight:200;
             line-height:1.5;
             @media #{$min992} {

@@ -108,7 +108,7 @@
       .about .intro-container .col-2 p {
         font-size: 3vw;
         font-weight: 200;
-        line-height: 1.5;
+        line-height: 1.8;
         color: #333333; }
         @media (max-width: 533.33333px) {
           .about .intro-container .col-2 p {
@@ -159,7 +159,7 @@
       .about .strategy-container .col-2 p {
         font-size: 3vw;
         font-weight: 200;
-        line-height: 1.5; }
+        line-height: 1.8; }
         @media (max-width: 533.33333px) {
           .about .strategy-container .col-2 p {
             font-size: 16px; } }
@@ -195,8 +195,9 @@
             margin: 1rem 0rem; } }
       .about .team-container header p {
         font-size: 3vw;
+        font-weight: 200;
         line-height: 1.5;
-        color: #212121; }
+        color: #333333; }
         @media (max-width: 466.66667px) {
           .about .team-container header p {
             font-size: 14px; } }
@@ -217,12 +218,10 @@
         padding: 2rem;
         transition: 0.2s all;
         box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1); }
-        .about .team-container .team-profiles .card:hover {
-          box-shadow: 0 5px 8px 4px rgba(0, 0, 0, 0.1); }
-          .about .team-container .team-profiles .card:hover .socials .linkedin {
-            color: #0077B5; }
-          .about .team-container .team-profiles .card:hover .socials .twitter {
-            color: #1da1f2; }
+        .about .team-container .team-profiles .card:hover .socials .linkedin {
+          color: #0077B5; }
+        .about .team-container .team-profiles .card:hover .socials .twitter {
+          color: #1da1f2; }
         @media (min-width: 992px) {
           .about .team-container .team-profiles .card {
             padding: 20px 10px;
@@ -248,8 +247,7 @@
           font-weight: 400;
           font-size: 3vw;
           margin: 0.5rem 0;
-          color: #fff;
-          color: #212121; }
+          color: #333333; }
           @media (max-width: 400px) {
             .about .team-container .team-profiles .card h2 {
               font-size: 12px; } }
@@ -261,7 +259,7 @@
           text-transform: capitalize;
           font-weight: 200;
           line-height: 1.5;
-          color: #212121; }
+          color: #333333; }
           @media (max-width: 300px) {
             .about .team-container .team-profiles .card p {
               font-size: 9px; } }
