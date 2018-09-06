@@ -4,14 +4,12 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import logo from '../../../assets/logo.svg';
-import about from '../../../assets/icons/about.svg';
 import styles from './Top-Navigation.css';
 
 export default class TopNavigation extends React.Component {
 
     toggleMenu = () => {
         this.props.toggleMenu();
-        console.log('**** is open ****',this.props.isOpen);
     }
 
     render(){
@@ -20,9 +18,9 @@ export default class TopNavigation extends React.Component {
 
         return(
             <nav className={styles.navigation}>
-                <div className={styles.logo}>
+                <NavLink exact to="/" className={styles.logo}>
                     <img src={logo} alt="logo" />
-                </div>
+                </NavLink>
                 <div onClick={this.toggleMenu} className={menuClasses}>
                     <span className={styles.bar}></span>
                     <span className={styles.bar}></span>

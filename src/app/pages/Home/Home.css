@@ -21,70 +21,71 @@
     background: #065785;
     background: url(../../../assets/images/bg.jpg);
     /* fallback */
-    background: linear-gradient(to bottom, rgba(9, 87, 133, 0.4), rgba(0, 0, 0, 0.8)), url(../../../assets/images/bg.jpg);
+    background: linear-gradient(to bottom, rgba(9, 87, 133, 0.5), rgba(0, 0, 0, 0.9)), url(../../../assets/images/bg.jpg);
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
-    min-height: 70vh;
     height: 100%;
     text-align: center; }
     @media (min-width: 768px) {
       .home .home-container {
         min-height: 100vh; } }
     .home .home-container .content {
-      padding: 15vh 6vw 2vh; }
+      padding: 10vh 6vw 2vh; }
       @media (min-width: 768px) {
         .home .home-container .content {
           padding: 25vh 14vw 9vh;
           margin: 0 auto; } }
       .home .home-container .content h1 {
+        font-family: "Roboto", sans-serif;
         font-size: 3vw;
         font-weight: 600;
         line-height: 1.35;
         margin-bottom: 20px; }
-        @media (max-width: 800px) {
+        @media (max-width: 1000px) {
           .home .home-container .content h1 {
-            font-size: 24px; } }
+            font-size: 30px; } }
         @media (min-width: 2000px) {
           .home .home-container .content h1 {
             font-size: 60px; } }
         @media (min-width: 992px) {
           .home .home-container .content h1 {
-            margin-bottom: 40px; } }
+            margin-bottom: 40px;
+            font-weight: 600; } }
       .home .home-container .content p {
         font-size: 3vw;
-        font-family: "Lato", sans-serif;
-        font-weight: 200;
+        font-family: "Oswald", sans-serif;
+        font-weight: 300;
         line-height: 1.5; }
         @media (max-width: 533.33333px) {
           .home .home-container .content p {
             font-size: 16px; } }
-        @media (min-width: 600px) {
+        @media (min-width: 700px) {
           .home .home-container .content p {
-            font-size: 18px; } }
+            font-size: 21px; } }
         @media (min-width: 992px) {
           .home .home-container .content p {
             padding: 0 10%; } }
     .home .home-container .logos {
       margin: 2rem auto 0;
-      width: 80%;
-      font-size: 3vw; }
+      width: 90%; }
       @media (min-width: 992px) {
         .home .home-container .logos {
           width: 90%; } }
-      @media (max-width: 266.66667px) {
-        .home .home-container .logos {
-          font-size: 8px; } }
-      @media (min-width: 466.66667px) {
-        .home .home-container .logos {
-          font-size: 14px; } }
       .home .home-container .logos h6 {
-        font-weight: 200;
+        font-size: 3vw;
         text-transform: capitalize;
         margin-bottom: 20px; }
+        @media (max-width: 366.66667px) {
+          .home .home-container .logos h6 {
+            font-size: 11px; } }
+        @media (min-width: 466.66667px) {
+          .home .home-container .logos h6 {
+            font-size: 14px; } }
         @media (min-width: 992px) {
           .home .home-container .logos h6 {
-            width: 100%; } }
+            width: 100%;
+            color: rgba(255, 255, 255, 0.5); } }
         .home .home-container .logos h6:before, .home .home-container .logos h6:after {
           background-color: rgba(255, 255, 255, 0.1);
           content: "";
@@ -92,7 +93,10 @@
           height: 1px;
           position: relative;
           vertical-align: middle;
-          width: 40%; }
+          width: 30%; }
+          @media (min-width: 992px) {
+            .home .home-container .logos h6:before, .home .home-container .logos h6:after {
+              width: 40%; } }
         .home .home-container .logos h6:before {
           right: 0.5em;
           margin-left: -40%; }
@@ -110,16 +114,14 @@
           height: 100%;
           width: auto; }
     .home .home-container .home-bottom {
-      position: absolute;
-      top: calc(100vh - 100px);
+      padding: 100px 0;
       width: 100%; }
       @media (min-width: 992px) {
         .home .home-container .home-bottom .scroll-downs {
           display: block;
           position: absolute;
-          top: 0;
           right: 0;
-          bottom: 0;
+          bottom: 50px;
           left: 0;
           margin: auto;
           width: 24px;
@@ -195,7 +197,7 @@
         font-size: 3vw;
         font-weight: 300;
         line-height: 1.5;
-        color: #212121; }
+        color: #333; }
         @media (max-width: 533.33333px) {
           .home .intro-container .col-2 p {
             font-size: 16px; } }
@@ -203,11 +205,15 @@
           .home .intro-container .col-2 p {
             font-size: 21px; } }
   .home .services-container {
-    background: url("../../../assets/images/trainings/bg2.jpg") no-repeat;
-    background-size: cover;
+    background: rgba(0, 0, 0, 0.1);
     min-height: 45vh;
     display: flex;
     flex-wrap: wrap; }
+    @media (min-width: 992px) {
+      .home .services-container {
+        background: url("../../../assets/images/trainings/bg2.jpg") no-repeat;
+        background-size: cover;
+        background-attachment: fixed; } }
     @media (min-width: 992px) {
       .home .services-container {
         flex-direction: row; } }
@@ -218,17 +224,22 @@
           flex: 1 1 50%; } }
     .home .services-container .col-1 {
       padding: 1rem 2rem;
-      background: rgba(6, 85, 131, 0.5); }
+      background: #e5f7ff; }
       @media (min-width: 992px) {
         .home .services-container .col-1 {
-          padding: 7rem 150px 7rem 60px; } }
+          padding: 7rem 140px 7rem 60px; } }
+      @media (min-width: 992px) {
+        .home .services-container .col-1 {
+          background: rgba(6, 85, 131, 0.5); } }
       .home .services-container .col-1 h2 {
-        color: #fff;
         margin: 2rem 0 1rem;
         font-size: 3vw;
         font-weight: 400;
         text-transform: capitalize;
-        letter-spacing: 1px; }
+        letter-spacing: 0.8px; }
+        @media (min-width: 992px) {
+          .home .services-container .col-1 h2 {
+            color: #fff; } }
         @media (max-width: 933.33333px) {
           .home .services-container .col-1 h2 {
             font-size: 28px; } }
@@ -236,19 +247,21 @@
           .home .services-container .col-1 h2 {
             font-size: 35px; } }
       .home .services-container .col-1 p {
-        font-family: "Lato", sans-serif;
+        font-family: "Oswald", sans-serif;
         font-size: 3vw;
-        font-weight: 200;
-        line-height: 1.5;
-        color: #ffffff; }
+        font-weight: 300;
+        line-height: 1.5; }
         @media (max-width: 533.33333px) {
           .home .services-container .col-1 p {
             font-size: 16px; } }
-        @media (min-width: 600px) {
+        @media (min-width: 700px) {
           .home .services-container .col-1 p {
-            font-size: 18px; } }
+            font-size: 21px; } }
+        @media (min-width: 992px) {
+          .home .services-container .col-1 p {
+            color: #fff; } }
     .home .services-container .col-2 {
-      background: rgba(6, 85, 131, 0.5);
+      background: #e5f7ff;
       position: relative;
       padding: 2rem; }
       @media (min-width: 992px) {
@@ -272,7 +285,7 @@
           flex: 1 0 100%; }
           @media (min-width: 992px) {
             .home .services-container .col-2 .block-container .block {
-              padding: 10px;
+              padding: 20px;
               flex: 1 50%; } }
           @media (min-width: 768px) {
             .home .services-container .col-2 .block-container .block {
@@ -286,24 +299,25 @@
               height: 100%;
               width: auto; }
           .home .services-container .col-2 .block-container .block h5 {
+            font-family: "Oswald", sans-serif;
             font-weight: 400;
             font-size: 16px;
             margin: 0.5rem 0;
-            color: #fff; }
+            color: #212121; }
             @media (min-width: 992px) {
               .home .services-container .col-2 .block-container .block h5 {
                 color: #212121; } }
           .home .services-container .col-2 .block-container .block p {
             font-size: 3vw;
-            font-weight: 200;
-            line-height: 1.5;
-            color: #fff; }
-            @media (max-width: 466.66667px) {
+            font-weight: 300;
+            line-height: 1.6;
+            color: #333; }
+            @media (max-width: 500px) {
               .home .services-container .col-2 .block-container .block p {
-                font-size: 14px; } }
-            @media (min-width: 433.33333px) {
+                font-size: 15px; } }
+            @media (min-width: 500px) {
               .home .services-container .col-2 .block-container .block p {
-                font-size: 13px; } }
+                font-size: 15px; } }
             @media (min-width: 992px) {
               .home .services-container .col-2 .block-container .block p {
-                color: #212121; } }
+                color: #333; } }

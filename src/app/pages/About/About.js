@@ -10,14 +10,14 @@ export default class About extends React.Component{
 
     render(){
         let teams = [
-            {name: 'Victor Asemota', position: 'Chief Executive Officer', img:'victor.jpeg', linkedin: '', twitter: ''},
-            {name: 'Chudi Nelson Ojukwu', position: 'Chairman', img:'nelson ojukwu.jpg', linkedin: '', twitter: ''},
-            {name: 'Henry Afolabi David', position: 'Chief Technology Officer', img:'henry david.jpg', linkedin: '', twitter: ''},
-            {name: 'Ayotunde Farinu', position: 'Chief Operating Officer', img:'Ayotunde.jpg', linkedin: '', twitter: ''},
-            {name: 'Modupe Ladejebi', position: 'Head Of Products', img:'Modupe ladejebi.jpg', linkedin: '', twitter: ''},
-            {name: 'Kayode Otegbeye', position: 'Managing Consultant', img:'kayode.jpg', linkedin: '', twitter: ''},
-            {name: 'Adebola Owojobi', position: 'Head, Business Development', img:'Adebola.jpg', linkedin: '', twitter: ''},
-            {name: 'Anthony Agbator', position: 'Head of Development', img:'Anthony.jpg', linkedin: '', twitter: ''}
+            {name: 'Victor Asemota', position: 'Chief Executive Officer', img:'victor.jpeg', linkedin: 'https://www.linkedin.com/in/asemota/', twitter: 'https://twitter.com/asemota'},
+            {name: 'Chudi Nelson Ojukwu', position: 'Chairman', img:'nelson ojukwu.jpg', linkedin: 'https://www.linkedin.com/in/chudi-ojukwu-85015a39/', twitter: 'https://twitter.com/nelsonchudi'},
+            {name: 'Henry Afolabi David', position: 'Chief Technology Officer', img:'henry david.jpg', linkedin: 'https://www.linkedin.com/in/henry-david-1003a848/', twitter: 'https://twitter.com/henrydee'},
+            {name: 'Ayotunde Farinu', position: 'Chief Operating Officer', img:'Ayotunde.jpg', linkedin: 'https://www.linkedin.com/in/ayotunde-farinu-5a092317/', twitter: 'https://twitter.com/contactayotunde'},
+            {name: 'Modupe Ladejebi', position: 'Head Of Products', img:'Modupe ladejebi.jpg', linkedin: 'https://www.linkedin.com/in/ladejebi-modupe-40133318/', twitter: 'https://twitter.com/dupsykool'},
+            //{name: 'Kayode Otegbeye', position: 'Managing Consultant', img:'kayode.jpg', linkedin: 'https://www.linkedin.com/in/kayode-otegbeye-85929243/', twitter: 'https://twitter.com/opeyemi_snr'},
+            {name: 'Adebola Sanni', position: 'Head, Business Development', img:'Adebola.jpg', linkedin: 'https://www.linkedin.com/in/adebolasanniawojobi/', twitter: ''}
+            // {name: 'Anthony Agbator', position: 'Head of Development', img:'Anthony.jpg', linkedin: '', twitter: ''}
         ];
 
         let teamList = teams.map((team, index) =>
@@ -28,8 +28,8 @@ export default class About extends React.Component{
                     <h2>{team.name}</h2>
                     <p>{team.position}</p>
                     <div className={styles.socials}>
-                        <a href=""><i className={`${styles.linkedin} fab fa-linkedin`}></i> </a>
-                        <a href=""><i className={`${styles.twitter} fab fa-twitter-square`}></i> </a>
+                        { team.linkedin? <a href={team.linkedin} rel="noopener noreferrer" target="_blank"><i className={`${styles.linkedin} fab fa-linkedin`}></i></a> : ''}
+                        { team.twitter? <a href={team.twitter} rel="noopener noreferrer" target="_blank"><i className={`${styles.twitter} fab fa-twitter-square`}></i></a> : ''}
                     </div>
                 </div>
             );
@@ -54,7 +54,7 @@ export default class About extends React.Component{
                                 </div>
                             </div>
                             <div className={styles['col-2']}>
-                                <h2>Empowering Africa<br></br> through Innovation</h2>
+                                <h2>Empowering Africa through Innovation</h2>
                                 <p>Founded in 1994 and incorporated in 2003, we are as an
                                     Information Technology company that seeks to tap into
                                     world wide technology trends offers a wide range of
@@ -71,17 +71,16 @@ export default class About extends React.Component{
                         <div className={styles.row}>
                             <div className={styles['col-1']}>
                                 <div className={styles['img-container']}>
-                                    <img src={iamswifta} alt="strategy"/>
+                                    <img src={require('../../../assets/icons/services/strategy.svg')} alt="strategy"/>
                                 </div>
                             </div>
                             <div className={styles['col-2']}>
                                 <h2>Strategic Service Delivery</h2>
-                                <p>Founded in 1994 and incorporated in 2003, we are as an
-                                    Information Technology company that seeks to tap into
-                                    world wide technology trends offers a wide range of
-                                    professional IT services. We are an entrepreneurial
-                                    company focused on the future with a commitment to
-                                    pioneering African service excellence.
+                                <p>
+                                    Our business strategy focuses on offering expert Managed services,
+                                    Integration, Development services to our clients as well as the
+                                    provision of viable and scalable enterprise software solutions with
+                                    a focus on delivering exceptional services to our clients.
                                 </p>
                             </div>
                         </div>

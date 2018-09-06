@@ -18,7 +18,7 @@
   justify-content: center;
   flex-direction: column;
   transition: all 0.5s;
-  font-family: "Barlow Semi Condensed", sans-serif;
+  font-family: "Roboto", sans-serif;
   background: #fff;
   transform: translateX(0);
   overflow-y: hidden;
@@ -72,7 +72,8 @@
       font-weight: 600;
       margin-bottom: 10px; }
     .footer .col-1 .mailbox a {
-      color: #6e6e6e;
+      font-family: "Oswald", sans-serif;
+      color: #333;
       font-weight: 300;
       text-decoration: none;
       display: inline-block;
@@ -83,8 +84,9 @@
     margin-bottom: 10px;
     text-transform: uppercase; }
   .footer .col-2 address, .footer .col-3 address {
+    font-family: "Oswald", sans-serif;
     font-size: 3vw;
-    color: #6e6e6e;
+    color: #333;
     font-weight: 300;
     text-transform: capitalize;
     line-height: 1.5; }

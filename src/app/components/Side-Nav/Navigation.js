@@ -4,13 +4,18 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import logo from '../../../assets/logo.svg';
-import about from '../../../assets/icons/about.svg';
+
 import styles from './Navigation.css';
 
 export default class SideNavigation extends React.Component {
 
     toggleMenu = () => {
         this.props.toggleMenu();
+        console.log('**** is open ****',this.props.isOpen);
+    }
+
+    hideMenu = () => {
+        this.props.hideMenu();
         console.log('**** is open ****',this.props.isOpen);
     }
 
@@ -21,7 +26,7 @@ export default class SideNavigation extends React.Component {
         return(
             <nav className={menuClasses}>
                 <ul>
-                    <li onClick={this.toggleMenu}>
+                    <li onClick={this.hideMenu}>
                         <NavLink exact to="/" activeClassName={styles['link-active']} className={`${styles.link} ${styles.brand}`}>
                             <div className={styles.logo}>
                                 <img src={logo} alt="logo" />
@@ -29,42 +34,42 @@ export default class SideNavigation extends React.Component {
                         </NavLink>
                     </li>
 
-                    <li onClick={this.toggleMenu}>
+                    <li onClick={this.hideMenu}>
                         <NavLink to="/about" activeClassName={styles['link-active']} className={`${styles.link} ${styles['nav-color-1']}`}>
                             <div className={styles.icon}>
-                                <img src={about}   alt="logo" />
+                                <img src={require('../../../assets/icons/sidemenu/about.svg')}    alt="logo" />
                             </div>
                             <span>About</span>
                         </NavLink>
                     </li>
-                    <li onClick={this.toggleMenu}>
+                    <li onClick={this.hideMenu}>
                         <NavLink to="/services" activeClassName={styles['link-active']} className={`${styles.link} ${styles['nav-color-2']}`}>
                             <div className={styles.icon}>
-                                <img src={about}   alt="logo" />
+                                <img src={require('../../../assets/icons/sidemenu/services.svg')}   alt="logo" />
                             </div>
                             <span>Services</span>
                         </NavLink>
                     </li>
-                    <li onClick={this.toggleMenu}>
+                    <li onClick={this.hideMenu}>
                         <NavLink to="/products" activeClassName={styles['link-active']} className={`${styles.link} ${styles['nav-color-3']}`}>
                             <div className={styles.icon}>
-                                <img src={about}   alt="logo" />
+                                <img src={require('../../../assets/icons/sidemenu/products.svg')}   alt="logo" />
                             </div>
                             <span>Products</span>
                         </NavLink>
                     </li>
-                    <li onClick={this.toggleMenu}>
+                    <li onClick={this.hideMenu}>
                         <NavLink to="/training" activeClassName={styles['link-active']} className={`${styles.link} ${styles['nav-color-4']}`}>
                             <div className={styles.icon}>
-                                <img src={about}   alt="logo" />
+                                <img src={require('../../../assets/icons/sidemenu/trainings.svg')}    alt="logo" />
                             </div>
                             <span>Training</span>
                         </NavLink>
                     </li>
-                    <li onClick={this.toggleMenu}>
+                    <li onClick={this.hideMenu}>
                         <NavLink to="/contact" activeClassName={styles['link-active']} className={`${styles.link} ${styles['nav-color-5']}`}>
                             <div className={styles.icon}>
-                                <img src={about} alt="logo" />
+                                <img src={require('../../../assets/icons/sidemenu/contact.svg')}  alt="logo" />
                             </div>
                             <span>Contact</span>
                         </NavLink>

@@ -44,7 +44,8 @@ export class Contact extends React.Component{
                     <div className={styles.content}>
                         <h1>Contact</h1>
                         <p>
-                             We are always ready to work with clients across the globe
+                            We’re Here To Help Your Business Blast Off!
+                            through Creative Ideas, Innovation & Sheer Determination
                         </p>
                     </div>
                 </section>

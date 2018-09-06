@@ -5,27 +5,32 @@
 import React from 'react';
 import styles from './Training.css';
 import trainings from './Training list';
-import mock from '../../../assets/images/trainings/bg2.jpg';
+import mock from '../../../assets/images/trainings/dsa.jpg';
 
 export default class Training extends React.Component{
+
+    // getBackgroundImg(value){
+    //     return  require(`../../../assets/images/trainings/${value}`);
+    // }
+
 
     render(){
 
         let trainingList = trainings.map((training, idx) =>
-                <div className={styles.card} key={idx}>
-                    <div style={{ backgroundImage:  `url(${mock})` }} className={styles['img-container']}>
-                        <div className={styles.logo}>
-                            <img src={require(`../../../assets/images/trainings/${training.logo}`)} alt={training.title}/>
-                        </div>
-                    </div>
-                    <div className={styles.content}>
-                        <h2>{training.title}</h2>
-                        <p>{training.content}</p>
-                    </div>
-                    <div className={styles['action-area']}>
-                        <a className={styles.button} href="">Learn more</a>
+            <div className={styles.card} key={idx}>
+                <div style={{backgroundImage: `url(${require(`../../../assets/images/trainings/${training.img}`)})`}} className={styles['img-container']}>
+                    <div className={styles.logo}>
+                        <img src={require(`../../../assets/images/trainings/${training.logo}`)} alt={training.title}/>
                     </div>
                 </div>
+                <div className={styles.content}>
+                    <h2>{training.title}</h2>
+                    <p>{training.content}</p>
+                </div>
+                <div className={styles['action-area']}>
+                    <a className={styles.button} href="">Learn more</a>
+                </div>
+            </div>
         );
 
         return(

@@ -61,7 +61,8 @@
         margin-bottom:10px;
       }
       a{
-        color: lighten($darker-grey, 30);
+        font-family: $second-ff;
+        color: $grey-text;
         font-weight: 300;
         text-decoration:none;
         display:inline-block;
@@ -78,8 +79,9 @@
       text-transform:uppercase;
     }
     address{
+      font-family: $second-ff;
       @include responsive-font(3vw, 14px, 16px);
-      color: lighten($darker-grey, 30);
+      color: $grey-text;
       font-weight: 300;
       text-transform:capitalize;
       line-height: 1.5;

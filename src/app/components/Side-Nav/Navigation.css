@@ -17,21 +17,24 @@
   justify-content: stretch;
   flex-direction: column;
   transition: all 0.25s;
-  font-family: "Barlow Semi Condensed", sans-serif;
+  font-family: "Roboto", sans-serif;
   background: #fff;
   color: #000;
   position: fixed;
   top: 0px;
-  bottom: 0px;
   box-shadow: 1px 0px 20px rgba(0, 0, 0, 0.08);
   width: 150px;
   z-index: 9;
   transform: translateX(-150px);
-  overflow-x: hidden;
+  overflow-x: scroll;
   z-index: 999; }
+  @media (max-width: 991px) {
+    .navigation {
+      bottom: 0; } }
   @media (min-width: 992px) {
     .navigation {
-      transform: translateX(0); } }
+      transform: translateX(0);
+      overflow-x: hidden; } }
   .navigation ul {
     list-style-type: none;
     margin: 0;
@@ -42,42 +45,49 @@
         .navigation ul li .link, .navigation ul li .brand, .navigation ul li .socials {
           min-height: calc(100vh / 7); } }
       .navigation ul li .link.link-active, .navigation ul li .brand.link-active, .navigation ul li .socials.link-active {
-        border-left: 3px solid #bbdefb; }
+        border-left: 3px solid #FF6265; }
     .navigation ul li .link, .navigation ul li .brand {
       border-left: 3px solid rgba(255, 255, 255, 0.1); }
       .navigation ul li .link:hover, .navigation ul li .brand:hover {
-        cursor: pointer;
-        border-left: 3px solid #bbdefb; }
+        cursor: pointer; }
     .navigation ul li .brand {
       background-color: #fff; }
+      .navigation ul li .brand:hover {
+        border-left: 3px solid #FF6265; }
     .navigation ul li .link {
       text-decoration: none;
       color: #000;
-      border-bottom: 1px solid rgba(108, 117, 125, 0.08);
       text-align: center;
       padding: 10px;
       box-sizing: border-box;
       display: flex;
       justify-content: center;
       flex-direction: column; }
+      @media (min-width: 992px) {
+        .navigation ul li .link {
+          border-bottom: 1px solid rgba(108, 117, 125, 0.08); } }
       .navigation ul li .link .logo {
         height: 40px; }
       .navigation ul li .link .icon {
+        display: none;
         height: 50px; }
+        @media (min-width: 992px) {
+          .navigation ul li .link .icon {
+            display: block; } }
       .navigation ul li .link .logo img, .navigation ul li .link .icon img {
         height: 100%;
         width: auto; }
       .navigation ul li .link span {
         display: block;
-        font-size: 3vw;
+        font-size: 21px;
         text-transform: uppercase;
-        margin-top: 5px; }
-        @media (max-width: 300px) {
+        margin-top: 0px;
+        padding: 20px 10px; }
+        @media (min-width: 992px) {
           .navigation ul li .link span {
-            font-size: 9px; } }
-        @media (min-width: 400px) {
-          .navigation ul li .link span {
-            font-size: 12px; } }
+            font-size: 12px;
+            margin-top: 5px;
+            padding: 0px; } }
     .navigation ul li .socials {
       padding-top: 1rem;
       text-align: center; }
@@ -106,7 +116,7 @@
   transform: translateX(0); }
   @media (max-width: 991px) {
     .mobile-open {
-      width: 200px; } }
+      width: 250px; } }
 
 .nav-color-1 {
   background-color: #fff; }
@@ -121,7 +131,7 @@
   background-color: #fff; }
 
 .nav-color-5 {
-  background-color: #ff6265; }
+  background-color: #fff; }
 
 @keyframes logo-spin {
   from {

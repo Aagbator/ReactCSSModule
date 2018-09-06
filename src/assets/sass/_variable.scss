@@ -4,14 +4,14 @@ $main-fw: 400;
 $main-lh: 1.5714286;
 $module: 1.5714286rem;
 
-$main-ff:'Barlow Semi Condensed', sans-serif;
-$second-ff: 'Lato', sans-serif;
-$heading-ff:'Oswald', sans-serif;
+//$main-ff:'Barlow Semi Condensed', sans-serif;
+$second-ff: 'Oswald', sans-serif;
+$heading-ff:'Lato', sans-serif;
 
 $animation: ease-in-out;
 
 $navigation-width: 150px;
-$navigation-width-mobile: 200px;
+$navigation-width-mobile: 250px;
 
 $max543 : only screen and (max-width: 543px);
 $min544 : only screen and (min-width: 544px);
@@ -33,15 +33,15 @@ $danger-color: #dc143c;
 $brand-primary: #064B79;
 $accent-color: #FF6265;
 $light-blue: #3394cb;
-$lighter-blue: #bbdefb;
+$lighter-blue: #e5f7ff;
 $light-grey: rgba(255, 254, 254, .5);
 $lighter-grey: #ededed;
-$lighter-grey-bg: #fcfcfc;
+$lighter-grey-bg: #F7F8FB;
 $dark-grey: #a0a0a0;
 $darker-grey: #212121;
 $sidebar-link: #757575;
 $dark-grey-link: #444;
-$grey-text: #333333;
+$grey-text: #333;
 $white: #ffffff;
 
 //
@@ -56,7 +56,7 @@ $nav-color-1 : #fff;
 $nav-color-2 : #fff;
 $nav-color-3 : #fff;
 $nav-color-4 : #fff;
-$nav-color-5 : #ff6265;
+$nav-color-5 : #fff;
 
 
 $linkedin : #0077B5;

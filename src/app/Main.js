@@ -29,11 +29,15 @@ export default class Main extends React.Component {
         this.setState({'open': !this.state.open})
     }
 
+    hideMenu = () => {
+        this.setState({'open': false})
+    }
+
     render () {
         return (
             <div className={styles.wrapper}>
                 <TopNavigation isOpen={this.state.open} toggleMenu={this.toggleMenu} />
-                <SideNavigation isOpen={this.state.open} toggleMenu={this.toggleMenu}  />
+                <SideNavigation isOpen={this.state.open} toggleMenu={this.toggleMenu} hideMenu={this.hideMenu}  />
                 <section className={styles.main_section}>
                     <Switch>
                         <Route exact={true} path="/" component={Home}/>
@@ -46,6 +50,7 @@ export default class Main extends React.Component {
                     </Switch>
                 </section>
                 <Footer />
+                <div onClick={this.hideMenu} className={this.state.open ? styles.overlay: null}></div>
             </div>
         )
     }

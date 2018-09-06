@@ -26,7 +26,7 @@ export default class Services extends React.Component{
                         <div className={styles.row}>
                             <div className={styles['col-1']}>
                                 <div className={styles['img-container']}>
-                                    <img src={iamswifta} alt="iAmSwifta"/>
+                                    <img src={require(`../../../assets/icons/services/business analysis.svg`)} alt="iAmSwifta"/>
                                 </div>
                             </div>
                             <div className={styles['col-2']}>
@@ -42,7 +42,7 @@ export default class Services extends React.Component{
                         <div className={styles.row}>
                             <div className={styles['col-1']}>
                                 <div className={styles['img-container']}>
-                                    <img src={iamswifta} alt="strategy"/>
+                                    <img src={require(`../../../assets/icons/services/project management.svg`)} alt="projectmanagement"/>
                                 </div>
                             </div>
                             <div className={styles['col-2']}>
@@ -58,7 +58,7 @@ export default class Services extends React.Component{
                         <div className={styles.row}>
                             <div className={styles['col-1']}>
                                 <div className={styles['img-container']}>
-                                    <img src={iamswifta} alt="iAmSwifta"/>
+                                    <img  src={require(`../../../assets/icons/services/application support.svg`)} alt="application support"/>
                                 </div>
                             </div>
                             <div className={styles['col-2']}>
@@ -74,7 +74,7 @@ export default class Services extends React.Component{
                         <div className={styles.row}>
                             <div className={styles['col-1']}>
                                 <div className={styles['img-container']}>
-                                    <img src={iamswifta} alt="strategy"/>
+                                    <img src={require(`../../../assets/icons/services/enterprise software.svg`)} alt="enterprise software"/>
                                 </div>
                             </div>
                             <div className={styles['col-2']}>
@@ -90,10 +90,11 @@ export default class Services extends React.Component{
                         <div className={styles.row}>
                             <div className={styles['col-1']}>
                                 <div className={styles['img-container']}>
-                                    <img src={iamswifta} alt="strategy"/>
+                                    <img src={require(`../../../assets/icons/services/mobile financial.svg`)} alt="mobile financial"/>
                                 </div>
                             </div>
                             <div className={styles['col-2']}>
+                                {/*, Database support, Systems Integration, Business Intelligence, Cloud Deployment Services, Application Development, AI & Machine Learning*/}
                                 <h2>Mobile Financial Services</h2>
                                 <p>
                                     The world has gone mobile so has businesses too.We equip individuals and businesses to drive financial services via mobile.

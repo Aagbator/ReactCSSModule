@@ -22,21 +22,19 @@ export default class Footer extends React.Component {
                 <div className={styles['col-2']}>
                     <h2>Lagos</h2>
                     <address>
-                        6B, Crown Court Estate Road <br></br>
+                        6B, Crown Court Estate <br></br>
                         Orisa Sanya street<br></br>
-                        off Onigefon road<br></br>
                         Oniru estate<br></br>
                         Victoria Island
                     </address>
                 </div>
                 <div className={styles['col-3']}>
-                    <h2>Ghana</h2>
+                    <h2>Accra</h2>
                     <address>
                         Trinity Junction, Off IPS Road<br></br>
                         Mempeason HSE No. 15<br></br>
                         East legon<br></br>
                         Accra<br></br>
-                        Ghana
                     </address>
                 </div>
             </footer>

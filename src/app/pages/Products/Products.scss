@@ -9,9 +9,9 @@
     background-color: #000000;
     // background-image: url(../../../assets/images/bg.jpg) left top, linear-gradient(#eb01a5, #d13531);
     background: #065785;
-    background: url(../../../assets/images/bg.jpg); /* fallback */
-    background: linear-gradient(to bottom,rgba(9,87,133, 0.4), rgba(0,0,0, 0.8)),url(../../../assets/images/bg.jpg);
-    background-repeat: no-repeat;
+    //background: url(../../../assets/images/bg.jpg); /* fallback */
+    background: linear-gradient(to bottom, rgba(6, 98, 144, 0.7), rgba(6, 98, 144, 0.9)),url(https://thumb1.shutterstock.com/display_pic_with_logo/952621/122664079/stock-photo-web-design-concept-122664079.jpg);
+    //background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
     min-height:30vh;
@@ -40,7 +40,7 @@
       p{
         @include responsive-font(3vw, 16px, 18px);
         font-family: $second-ff;
-        font-weight:200;
+        font-weight:300;
         line-height:1.8;
         @media #{$min992} {
           padding: 0 10%;
@@ -60,11 +60,10 @@
       }
       width: 100%;
       .img-container{
-        height:200px;
         @media #{$min992} {
           height:400px;
         }
-        height:250px;
+        height:400px;
         box-sizing:border-box;
         img{
           height:100%;
@@ -92,7 +91,7 @@
       }
       p{
         @include responsive-font(3vw, 16px, 18px);
-        font-weight:200;
+        font-weight:300;
         line-height:1.8;
         color:$grey-text;
       }

@@ -10,14 +10,13 @@
    // background-image: url(../../../assets/images/bg.jpg) left top, linear-gradient(#eb01a5, #d13531);
     background: #065785;
     background: url(../../../assets/images/bg.jpg); /* fallback */
-    background: linear-gradient(to bottom,rgba(9,87,133, 0.4), rgba(0,0,0, 0.8)),url(../../../assets/images/bg.jpg);
+    background: linear-gradient(to bottom,rgba(9,87,133, 0.5), rgba(0,0,0, 0.9)),url(../../../assets/images/bg.jpg);
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
     @media #{$min768} {
       min-height:100vh;
     }
-    min-height:70vh;
     height:100%;
     text-align:center;
     .content{
@@ -26,21 +25,23 @@
         margin:0 auto;
       }
 
-      padding: 15vh 6vw 2vh;
+      padding: 10vh 6vw 2vh;
 
       h1{
-        @include responsive-font(3vw, 24px, 60px);
+        font-family:$main-ff;
+        @include responsive-font(3vw, 30px, 60px);
         font-weight:600;
         @media #{$min992} {
           margin-bottom:40px;
+          font-weight:600;
         }
         line-height:1.35;
         margin-bottom:20px;
       }
       p{
-        @include responsive-font(3vw, 16px, 18px);
+        @include responsive-font(3vw, 16px, 21px);
         font-family: $second-ff;
-        font-weight:200;
+        font-weight:300;
         line-height:1.5;
         @media #{$min992} {
           padding: 0 10%;
@@ -52,13 +53,14 @@
       @media #{$min992} {
         width:90%;
       }
-      width:80%;
-      @include responsive-font(3vw, 8px, 14px);
+      width:90%;
       h6{
-        font-weight:200;
+        @include responsive-font(3vw, 11px, 14px);
         text-transform: capitalize;
+
         @media #{$min992} {
           width:100%;
+          color:rgba(255,255,255,.5);
         }
         margin-bottom: 20px;
         &:before,
@@ -70,7 +72,10 @@
             height: 1px;
             position: relative;
             vertical-align: middle;
-            width: 40%;
+            @media #{$min992} {
+              width: 40%;
+            }
+            width: 30%;
         }
         &:before{
           right: 0.5em;
@@ -97,16 +102,14 @@
       }
     }
     .home-bottom{
-      position:absolute;
-      top: calc(100vh - 100px);
+      padding:100px 0;
       width:100%;
       .scroll-downs {
           @media #{$min992} {
           display: block;
           position: absolute;
-          top: 0;
           right: 0;
-          bottom: 0;
+          bottom: 50px;
           left: 0;
           margin: auto;
 
@@ -184,15 +187,20 @@
         @include responsive-font(3vw, 16px, 21px);
         font-weight:300;
         line-height:1.5;
-        color:$darker-grey
+        color:$grey-text;
       }
     }
   }
 
   .services-container{
-    background: url('../../../assets/images/trainings/bg2.jpg') no-repeat;
-    //background-position: 100% calc(100% + 350px);
-    background-size: cover;
+    @media #{$min992} {
+      background: url('../../../assets/images/trainings/bg2.jpg') no-repeat;
+      //background-position: 100% calc(100% + 350px);
+      background-size: cover;
+      background-attachment:fixed;
+    }
+    background: rgba(0,0,0,.1);
+
     min-height:45vh;
     display:flex;
     flex-wrap:wrap;
@@ -207,28 +215,37 @@
     }
     .col-1{
       @media #{$min992} {
-        padding: 7rem 150px 7rem 60px;
+        padding: 7rem 140px 7rem 60px;
       }
       padding: 1rem 2rem;
-      background: rgba(6, 85, 131, 0.5);
+      @media #{$min992} {
+        background: rgba(6, 85, 131, 0.5);
+      }
+      background: $lighter-blue;
+
       //  height:100%;
       h2{
         @media #{$min992} {
           //margin:7rem 0 1rem;
+          color: #fff;
         }
-        color: #fff;
+
         margin:2rem 0 1rem;
         @include responsive-font(3vw, 28px, 35px);
         font-weight:400;
         text-transform:capitalize;
-        letter-spacing: 1px;
+        letter-spacing: 0.8px;
       }
       p{
         font-family: $second-ff;
-        @include responsive-font(3vw, 16px, 18px);
-        font-weight:200;
+        @include responsive-font(3vw, 16px, 21px);
+        font-weight:300;
         line-height:1.5;
-        color: #ffffff;
+
+        @media #{$min992} {
+          //margin:7rem 0 1rem;
+          color: #fff;
+        }
       }
     }
     .col-2 {
@@ -236,7 +253,7 @@
         background: none;
         padding:5rem 2rem;
       }
-      background: rgba(6, 85, 131, 0.5);
+      background: $lighter-blue;
       position:relative;
       padding: 2rem;
       .block-container{
@@ -255,7 +272,7 @@
           text-align:left;
           padding:5px;
           @media #{$min992} {
-            padding:10px;
+            padding:20px;
             flex: 1 50%;
           }
           @media #{$min768} {
@@ -273,22 +290,23 @@
             }
           }
           h5{
+            font-family: $second-ff;
             font-weight:400;
             font-size:16px;
             margin:0.5rem 0;
-            color: #fff;
+            color:$darker-grey;
             @media #{$min992} {
               color:$darker-grey;
             }
           }
           p{
-            @include responsive-font(3vw, 14px, 13px);
-            font-weight:200;
-            line-height:1.5;
+            @include responsive-font(3vw, 15px, 15px);
+            font-weight:300;
+            line-height:1.6;
             @media #{$min992} {
-              color:$darker-grey;
+              color:$grey-text;
             }
-            color: #fff;
+            color:$grey-text;
           }
         }
       }

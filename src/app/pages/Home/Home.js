@@ -4,9 +4,17 @@
 
 import React from 'react';
 import styles from './Home.css';
-import patner from '../../../assets/images/partners/partner.png';
-import about from '../../../assets/icons/about.png';
-import iamswifta from '../../../assets/images/iamswifta.png';
+import huwaei from '../../../assets/images/partners/huwaei.png';
+import google from '../../../assets/images/partners/google.png';
+import vodafone from '../../../assets/images/partners/visaf.png';
+import oracle from '../../../assets/images/partners/oracle.png';
+import verifone from '../../../assets/images/partners/verifone.png';
+import visa from '../../../assets/images/partners/visa.png';
+import vericash from '../../../assets/images/partners/vericash.png';
+import binu from '../../../assets/images/partners/binu.png';
+import mtn from '../../../assets/images/partners/mtn.png';
+import net1 from '../../../assets/images/partners/net1.png';
+import iamswifta from '../../../assets/images/iamswifta.svg';
 
 export default class Home extends React.Component{
     render(){
@@ -23,17 +31,16 @@ export default class Home extends React.Component{
                     <div className={styles.logos}>
                         <h6>our core partners</h6>
                         <ul>
-                            <li className={styles.partners}><img src={patner}  alt="logo" /></li>
-                            <li className={styles.partners}><img src={patner}  alt="logo" /></li>
-                            <li className={styles.partners}><img src={patner}  alt="logo" /></li>
-                            <li className={styles.partners}><img src={patner}  alt="logo" /></li>
-                            <li className={styles.partners}><img src={patner}  alt="logo" /></li>
-                            <li className={styles.partners}><img src={patner}  alt="logo" /></li>
-                            <li className={styles.partners}><img src={patner}  alt="logo" /></li>
-                            <li className={styles.partners}><img src={patner}  alt="logo" /></li>
-                            <li className={styles.partners}><img src={patner}  alt="logo" /></li>
-                            <li className={styles.partners}><img src={patner}  alt="logo" /></li>
-                            <li className={styles.partners}><img src={patner}  alt="logo" /></li>
+                            <li className={styles.partners}><img src={google}  alt="logo" /></li>
+                            <li className={styles.partners}><img src={binu}  alt="logo" /></li>
+                            <li className={styles.partners}><img src={verifone}  alt="logo" /></li>
+                            <li className={styles.partners}><img src={visa}  alt="logo" /></li>
+                            <li className={styles.partners}><img src={huwaei}  alt="logo" /></li>
+                            <li className={styles.partners}><img src={vericash}  alt="logo" /></li>
+                            <li className={styles.partners}><img src={vodafone}  alt="logo" /></li>
+                            <li className={styles.partners}><img src={oracle}  alt="logo" /></li>
+                            <li className={styles.partners}><img src={mtn}  alt="logo" /></li>
+                            <li className={styles.partners}><img src={net1}  alt="logo" /></li>
                         </ul>
                     </div>
                     <div className={styles['home-bottom']}>
@@ -73,41 +80,39 @@ export default class Home extends React.Component{
                             <div className={styles['block-container']}>
                                 <div className={styles.block}>
                                     <div className={styles['img-container']}>
-                                        <img alt="logo" src={about} />
+                                        <img alt="logo" src={require('../../../assets/icons/business analysis.svg')} />
                                     </div>
                                     <h5>Business Analysis</h5>
-                                    <p>we are helping businesses recognize and analyze their needs
-                                        and deliver solutions to organizations strategically in a
-                                        rapidly changing business environments.
+                                    <p>Our experienced Business Analysts are helping businesses recognize and
+                                        analyze their needs and deliver solutions strategically.
                                     </p>
                                 </div>
                                 <div className={styles.block}>
                                     <div className={styles['img-container']}>
-                                        <img alt="logo" src={about} />
+                                        <img alt="logo" src={require('../../../assets/icons/project management.svg')} />
                                     </div>
                                     <h5>Project Management</h5>
-                                    <p>we have helped organizations with initiating, planning, executing,
-                                        controlling, and closing the work to achieve specific goals and meet
-                                        specific success criteria at the specified time through experience,
-                                        to achieve project objectives.
+                                    <p>With hands on application of processes, methods, knowledge and skills,
+                                        we have helped organizations with initiating, planning, executing,
+                                        and closing the work to achieve project objectives globally.
                                     </p>
                                 </div>
                                 <div className={styles.block}>
                                     <div className={styles['img-container']}>
-                                        <img alt="logo" src={about} />
+                                        <img alt="logo" src={require('../../../assets/icons/support.svg')} />
                                     </div>
                                     <h5>Software Application Support</h5>
-                                    <p>we have helped organizations with initiating, planning, executing, controlling, and closing the work to achieve specific goals and meet specific success criteria at the specified time through experience, to achieve project objectives..
+                                    <p>Over years, our IT support professionals have helped  to support technical projects like application software, infrastructure software,
+                                        for local and international companies.
                                     </p>
                                 </div>
                                 <div className={styles.block}>
                                     <div className={styles['img-container']}>
-                                        <img alt="logo" src={about} />
+                                        <img alt="logo" src={require('../../../assets/icons/enterprise software.svg')} />
                                     </div>
                                     <h5>Enterprise Software Solution</h5>
-                                    <p>Our Enterprise software solution are built for (small to) large organizations.
-                                        It continuously helps to improve enterprise productivity and efficiency through business
-                                        logic support functionality
+                                    <p>These solutions are built for (medium) to large organizations to improve productivity,
+                                        efficiency and provide critical solutions to organizational tasks as a whole.
                                     </p>
                                 </div>
                             </div>
