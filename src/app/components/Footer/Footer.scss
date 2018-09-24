@@ -22,7 +22,9 @@
     box-sizing:content-box;
     @media #{$min992} {
       padding: 60px 30px;
+      text-align: left;
     }
+    text-align: center;
     padding: 1.5rem 1rem;
   }
   .col-1{

@@ -4,8 +4,6 @@
 
 import React from 'react';
 import styles from './Products.css';
-import iamswifta from '../../../assets/images/iamswifta.png';
-import mock from '../../../assets/images/mock.png';
 
 export default class Products extends React.Component{
 

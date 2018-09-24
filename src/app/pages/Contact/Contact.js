@@ -3,41 +3,12 @@
  */
 
 import React from 'react';
-import { Map, InfoWindow, Marker, GoogleApiWrapper } from 'google-maps-react';
 import styles from './Contact.css';
-import iamswifta from '../../../assets/logo.svg';
+import SwiftaMap from './SwiftaMap/SwiftaMap';
 
-export class Contact extends React.Component{
-
-    state = {
-        showingInfoWindow: false,
-        activeMarker: {},
-        selectedPlace: {},
-    };
-
-    onMarkerClick = (props, marker, e) =>
-        this.setState({
-            selectedPlace: props,
-            activeMarker: marker,
-            showingInfoWindow: true
-        });
-
-    onMapClicked = (props) => {
-        if (this.state.showingInfoWindow) {
-            this.setState({
-                showingInfoWindow: false,
-                activeMarker: null
-            })
-        }
-    };
-
+export default class Contact extends React.Component{
 
     render(){
-        const style = {
-            width: '100%',
-            height: '100%'
-        }
-
         return(
             <section className={styles.contact}>
                 <section className={styles['contact-intro']}>
@@ -62,7 +33,7 @@ export class Contact extends React.Component{
                                             <span className={styles.text}>Enquiry</span>
                                         </div>
                                         <div className={styles['img-container']}>
-                                            <img src={iamswifta} alt="iAmSwifta"/>
+                                            <img src={require(`../../../assets/icons/contact/enquiry.svg`)} alt="enquiry"/>
                                         </div>
                                     </label>
                                     <label className={styles['radio-container']}>
@@ -72,7 +43,7 @@ export class Contact extends React.Component{
                                             <span className={styles.text}>Development</span>
                                         </div>
                                         <div className={styles['img-container']}>
-                                            <img src={iamswifta} alt="iAmSwifta"/>
+                                            <img src={require(`../../../assets/icons/contact/development.svg`)} alt="development"/>
                                         </div>
                                     </label>
                                     <label className={styles['radio-container']}>
@@ -82,7 +53,7 @@ export class Contact extends React.Component{
                                             <span className={styles.text}>Training</span>
                                         </div>
                                         <div className={styles['img-container']}>
-                                            <img src={iamswifta} alt="iAmSwifta"/>
+                                            <img src={require(`../../../assets/icons/contact/training.svg`)} alt="training"/>
                                         </div>
                                     </label>
                                 </div>
@@ -110,26 +81,7 @@ export class Contact extends React.Component{
                     </div>
                 </section>
                 <section className={styles.map}>
-                    <Map google={this.props.google}
-                         style={style}
-                         initialCenter={{
-                             lat: 6.4287701,
-                             lng: 3.4513234
-                         }}
-                         zoom={17}
-                         onClick={() => this.onMapClicked}
-                    >
-
-                        <Marker onClick={() => this.onMarkerClick}
-                            name={'Swifta Systems'}
-                         />
-
-                        <InfoWindow onClose={this.onInfoWindowClose}>
-                            <div>
-                                <h1>{this.state.selectedPlace.name}</h1>
-                            </div>
-                        </InfoWindow>
-                    </Map>
+                    <SwiftaMap />
                 </section>
             </section>
 
@@ -137,7 +89,7 @@ export class Contact extends React.Component{
     }
 }
 
-export default GoogleApiWrapper({
-    apiKey: "AIzaSyBVIV-DR7DqwGrOGfpn3OYiYL0JuxxVJo0",
-    v: "3"
-})(Contact);
+// export default GoogleApiWrapper({
+//     apiKey: "AIzaSyBVIV-DR7DqwGrOGfpn3OYiYL0JuxxVJo0",
+//     v: "3"
+// })(Contact);

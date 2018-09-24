@@ -19,9 +19,9 @@
     color: #fff;
     background-color: #000000;
     background: #065785;
-    background: url(../../../assets/images/bg.jpg);
+    background: url(../../../assets/images/contact-banner.jpg);
     /* fallback */
-    background: linear-gradient(to bottom, rgba(6, 98, 144, 0.8), rgba(6, 98, 144, 0.8)), url(https://thumb1.shutterstock.com/display_pic_with_logo/704356/233878276/stock-vector-integration-and-innovation-technology-best-ideas-for-business-presentation-model-233878276.jpg);
+    background: linear-gradient(to bottom, rgba(9, 87, 133, 0.5), rgba(0, 0, 0, 0.8)), url(../../../assets/images/contact-banner.jpg);
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
@@ -54,7 +54,7 @@
       .contact .contact-intro .content p {
         font-size: 3vw;
         font-family: "Oswald", sans-serif;
-        font-weight: 300;
+        font-weight: 200;
         line-height: 1.5; }
         @media (max-width: 533.33333px) {
           .contact .contact-intro .content p {
@@ -121,7 +121,7 @@
             /* When the radio button is checked, add a blue background */
             /* Show the indicator (dot/circle) when checked */ }
             .contact .contact-section .col-1 .radio-group .radio-container input:checked ~ .checkmark {
-              border: 2px solid #e5f7ff;
+              border: 2px solid #bbdefb;
               transition: 0.2s all;
               box-shadow: 0 10px 20px 0 rgba(36, 98, 104, 0.16); }
               .contact .contact-section .col-1 .radio-group .radio-container input:checked ~ .checkmark .text {
@@ -144,7 +144,6 @@
               text-transform: uppercase;
               left: 0;
               width: 100%;
-              z-index: 9999;
               font-size: 3vw;
               bottom: 10px;
               color: #88949e;
@@ -163,10 +162,10 @@
               content: '\2713';
               top: 9px;
               left: 9px;
-              color: #e5f7ff;
+              color: #bbdefb;
               border-radius: 30%; }
           .contact .contact-section .col-1 .radio-group .radio-container:hover input ~ .checkmark {
-            border: 2px solid #e5f7ff; }
+            border: 2px solid #bbdefb; }
       @media (min-width: 992px) {
         .contact .contact-section .col-1 {
           width: 50%; } }
@@ -200,7 +199,7 @@
             transition-delay: 0s; }
             .contact .contact-section .col-2 .contact .input-group input:focus, .contact .contact-section .col-2 .contact .input-group textarea:focus {
               outline: none;
-              border: 3px solid #e5f7ff; }
+              border: 3px solid #bbdefb; }
           .contact .contact-section .col-2 .contact .input-group.col-half {
             flex: 0 1 100%; }
             @media (min-width: 992px) {
@@ -216,7 +215,7 @@
           color: #ffffff;
           text-transform: uppercase;
           font-size: 3vw;
-          background-color: #FF6265;
+          background-color: #135C90;
           border: none;
           border-radius: 5px; }
           @media (max-width: 366.66667px) {
