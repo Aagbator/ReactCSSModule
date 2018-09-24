@@ -4,7 +4,6 @@
 
 import React from 'react';
 import styles from './Services.css';
-import iamswifta from '../../../assets/images/iamswifta.png';
 
 export default class Services extends React.Component{
 

@@ -5,7 +5,6 @@
 import React from 'react';
 import styles from './Training.css';
 import trainings from './Training list';
-import mock from '../../../assets/images/trainings/dsa.jpg';
 
 export default class Training extends React.Component{
 

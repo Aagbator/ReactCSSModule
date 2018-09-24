@@ -6,6 +6,7 @@ import { Route, Switch } from 'react-router-dom'
 import styles from './Main.css';
 import TopNavigation from './components/Top-Nav/Top-Navigation';
 import SideNavigation from './components/Side-Nav/Navigation';
+import MobileNavigation from './components/Mobile-Nav/Mobile-Navigation';
 import Footer from './components/Footer/Footer';
 
 import Home from './pages/Home/Home';
@@ -36,7 +37,8 @@ export default class Main extends React.Component {
     render () {
         return (
             <div className={styles.wrapper}>
-                <TopNavigation isOpen={this.state.open} toggleMenu={this.toggleMenu} />
+                {/*<TopNavigation isOpen={this.state.open} toggleMenu={this.toggleMenu} />*/}
+                <MobileNavigation isOpen={this.state.open} toggleMenu={this.toggleMenu} />
                 <SideNavigation isOpen={this.state.open} toggleMenu={this.toggleMenu} hideMenu={this.hideMenu}  />
                 <section className={styles.main_section}>
                     <Switch>

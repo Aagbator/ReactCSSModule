@@ -12,8 +12,6 @@
     @media (min-width: 992px) {
       .wrapper .main_section {
         margin-top: 0;
-        margin-left: 150px;
-        width: calc(100% - 150px);
         transition: all 0.5s; } }
   .wrapper .overlay {
     position: fixed;

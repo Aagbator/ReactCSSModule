@@ -25,9 +25,7 @@
   border-top: 1px solid #ededed; }
   @media (min-width: 992px) {
     .footer {
-      flex-direction: row;
-      transform: translateX(150px);
-      width: calc(100% - 150px); } }
+      flex-direction: row; } }
   .footer .col-1, .footer .col-2, .footer .col-3 {
     flex: 1 1;
     box-sizing: content-box;

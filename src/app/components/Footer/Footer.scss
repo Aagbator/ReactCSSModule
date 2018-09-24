@@ -14,8 +14,6 @@
   border-top:1px solid #ededed;
   @media #{$min992} {
     flex-direction: row;
-    transform: translateX($navigation-width);
-    width: calc(100% - #{$navigation-width});
   }
   .col-1, .col-2, .col-3{
     flex: 1 1;
