@@ -37,7 +37,7 @@ export default class Main extends React.Component {
     render () {
         return (
             <div className={styles.wrapper}>
-                {/*<TopNavigation isOpen={this.state.open} toggleMenu={this.toggleMenu} />*/}
+                <TopNavigation isOpen={this.state.open} toggleMenu={this.toggleMenu} />
                 <MobileNavigation isOpen={this.state.open} toggleMenu={this.toggleMenu} />
                 <SideNavigation isOpen={this.state.open} toggleMenu={this.toggleMenu} hideMenu={this.hideMenu}  />
                 <section className={styles.main_section}>

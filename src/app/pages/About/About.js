@@ -4,7 +4,6 @@
 
 import React from 'react';
 import styles from './About.css';
-import iamswifta from '../../../assets/images/iamswifta.png';
 
 export default class About extends React.Component{
 
@@ -50,7 +49,7 @@ export default class About extends React.Component{
                         <div className={styles.row}>
                             <div className={styles['col-1']}>
                                 <div className={styles['img-container']}>
-                                    <img src={iamswifta} alt="iAmSwifta"/>
+                                    <img src={require('../../../assets/images/innovation.svg')} alt="strategy"/>
                                 </div>
                             </div>
                             <div className={styles['col-2']}>
@@ -71,7 +70,7 @@ export default class About extends React.Component{
                         <div className={styles.row}>
                             <div className={styles['col-1']}>
                                 <div className={styles['img-container']}>
-                                    <img src={require('../../../assets/icons/services/strategy.svg')} alt="strategy"/>
+                                    <img src={require('../../../assets/images/strategy.svg')} alt="strategy"/>
                                 </div>
                             </div>
                             <div className={styles['col-2']}>

@@ -2,8 +2,9 @@
 @import '../../../assets/sass/helpers';
 
 .navigation{
-  display: none;
-
+  @media #{$max991} {
+    display: none;
+  }
   @media #{$min992} {
     position: fixed;
     height:80px;

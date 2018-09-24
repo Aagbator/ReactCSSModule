@@ -19,7 +19,7 @@
     color: #fff;
     background-color: #000000;
     background: #065785;
-    background: linear-gradient(to bottom, rgba(6, 98, 144, 0.7), rgba(6, 98, 144, 0.9)), url(https://thumb1.shutterstock.com/display_pic_with_logo/952621/122664079/stock-photo-web-design-concept-122664079.jpg);
+    background: linear-gradient(to bottom, rgba(9, 87, 133, 0.5), rgba(0, 0, 0, 0.8)), url(../../../assets/images/products_bg.jpg);
     background-position: top center;
     background-size: cover;
     min-height: 30vh;
@@ -82,12 +82,13 @@
           height: 100%;
           width: auto; }
     .products .section-1 .col-2, .products .section-2 .col-2, .products .section-3 .col-2, .products .section-4 .col-2 {
-      text-align: left; }
+      text-align: center; }
       @media (min-width: 992px) {
         .products .section-1 .col-2, .products .section-2 .col-2, .products .section-3 .col-2, .products .section-4 .col-2 {
           padding-top: 5rem;
           float: left;
-          width: 50%; } }
+          width: 50%;
+          text-align: left; } }
       .products .section-1 .col-2 h2, .products .section-2 .col-2 h2, .products .section-3 .col-2 h2, .products .section-4 .col-2 h2 {
         text-transform: uppercase;
         margin: 1rem 0;
@@ -142,3 +143,10 @@
     background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%); }
   .products .section-4 {
     background-color: #333333; }
+    @media (min-width: 992px) {
+      .products .section-4 .col-1 .img-container {
+        height: 100%;
+        width: 400px; } }
+    .products .section-4 .col-1 .img-container img {
+      margin-top: 50px;
+      width: 100%; }

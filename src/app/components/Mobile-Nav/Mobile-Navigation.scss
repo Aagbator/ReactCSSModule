@@ -2,7 +2,9 @@
 @import '../../../assets/sass/helpers';
 
 .navigation{
-  @media #{$max991} {
+    @media #{$min992} {
+      display: none;
+    }
     position: fixed;
     height:60px;
     box-sizing:border-box;
@@ -76,7 +78,6 @@
         }
       }
     }
-  }
 }
 
 

@@ -9,9 +9,6 @@ import styles from './Mobile-Navigation.css';
 
 export default class MobileNavigation extends React.Component {
 
-    state = {
-        mainNnav : false
-    }
 
     toggleMenu = () => {
         this.props.toggleMenu();

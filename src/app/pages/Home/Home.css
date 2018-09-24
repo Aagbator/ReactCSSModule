@@ -180,7 +180,7 @@
           float: left;
           width: 50%; } }
       .home .intro-container .col-2 h2 {
-        color: #3394cb;
+        color: #135C90;
         margin: 1rem 0.5rem;
         font-size: 3vw;
         font-weight: 600; }
@@ -211,7 +211,7 @@
     flex-wrap: wrap; }
     @media (min-width: 992px) {
       .home .services-container {
-        background: url("../../../assets/images/trainings/bg2.jpg") no-repeat;
+        background: url("../../../assets/images/bg2.jpg") no-repeat;
         background-size: cover;
         background-attachment: fixed; } }
     @media (min-width: 992px) {
@@ -230,7 +230,7 @@
           padding: 7rem 140px 7rem 60px; } }
       @media (min-width: 992px) {
         .home .services-container .col-1 {
-          background: rgba(6, 85, 131, 0.5); } }
+          background: rgba(6, 85, 131, 0.6); } }
       .home .services-container .col-1 h2 {
         margin: 2rem 0 1rem;
         font-size: 3vw;

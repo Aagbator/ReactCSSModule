@@ -10,7 +10,7 @@
     // background-image: url(../../../assets/images/bg.jpg) left top, linear-gradient(#eb01a5, #d13531);
     background: #065785;
     //background: url(../../../assets/images/bg.jpg); /* fallback */
-    background: linear-gradient(to bottom, rgba(6, 98, 144, 0.7), rgba(6, 98, 144, 0.9)),url(https://thumb1.shutterstock.com/display_pic_with_logo/952621/122664079/stock-photo-web-design-concept-122664079.jpg);
+    background: linear-gradient(to bottom,rgba(9,87,133, 0.5), rgba(0,0,0, 0.8)),url(../../../assets/images/products_bg.jpg);
     //background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
@@ -76,8 +76,9 @@
         padding-top:5rem;
         float:left;
         width: 50%;
+        text-align:left;
       }
-      text-align:left;
+      text-align:center;
       h2{
         @media #{$min992} {
           margin:0.6rem 0 ;
@@ -139,6 +140,18 @@
 
   .section-4{
     background-color: #333333;
+    .col-1{
+      .img-container{
+        @media #{$min992} {
+          height:100%;
+          width:400px;
+        }
+        img{
+          margin-top:50px;
+          width:100%;
+        }
+      }
+    }
   }
 
 
