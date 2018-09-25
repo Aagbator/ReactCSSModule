@@ -1,5 +1,5 @@
 {
-  "name": "swifta-app",
+  "name": "swifta",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -57,6 +57,7 @@
     "build": "npm-run-all build-css build-js",
     "test": "node scripts/test.js --env=jsdom"
   },
+  "homepage":"http://demo1.swifta.com",
   "jest": {
     "collectCoverageFrom": [
       "src/**/*.{js,jsx,mjs}"

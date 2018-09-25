@@ -19,7 +19,7 @@ export default class TopNavigation extends React.Component {
 
     componentDidMount(){
         window.addEventListener('scroll', () => {
-            if(window.scrollY>100){
+            if(window.scrollY>20){
                 this.setState({ mainNnav: true });
             }
             else{

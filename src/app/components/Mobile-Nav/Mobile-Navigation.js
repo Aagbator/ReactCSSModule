@@ -4,7 +4,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import logo from '../../../assets/logo.svg';
-import logo2 from '../../../assets/logo2.svg';
 import styles from './Mobile-Navigation.css';
 
 export default class MobileNavigation extends React.Component {
