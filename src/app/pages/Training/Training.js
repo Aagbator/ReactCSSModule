@@ -26,9 +26,11 @@ export default class Training extends React.Component{
                     <h2>{training.title}</h2>
                     <p>{training.content}</p>
                 </div>
+
                 <div className={styles['action-area']}>
-                    <a className={styles.button} href="">Learn more</a>
+                    {training.url ? <a className={styles.button} href={training.url} rel="noopener noreferrer" target="_blank">Learn more</a> : '' }
                 </div>
+
             </div>
         );
 

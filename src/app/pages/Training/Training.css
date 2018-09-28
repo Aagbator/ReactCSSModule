@@ -91,7 +91,7 @@
           padding: 1rem; }
         @media (min-width: 992px) {
           .trainings .trainings-container .trainings-cards .card {
-            flex: 0 1 31%; } }
+            flex: 0 1 48%; } }
         @media (max-width: 991px) {
           .trainings .trainings-container .trainings-cards .card {
             flex: 0 1 45%; } }
