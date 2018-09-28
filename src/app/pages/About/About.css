@@ -21,7 +21,7 @@
     background: #065785;
     background: url(../../../assets/images/bg.jpg);
     /* fallback */
-    background: linear-gradient(to bottom, rgba(9, 87, 133, 0.4), rgba(0, 0, 0, 0.8)), url(https://thumb7.shutterstock.com/display_pic_with_logo/2117717/380913697/stock-photo-business-team-discussion-team-customer-service-concept-380913697.jpg);
+    background: linear-gradient(to bottom, rgba(9, 87, 133, 0.4), rgba(0, 0, 0, 0.8)), url(../../../assets/images/about-banner.jpg);
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
@@ -56,7 +56,8 @@
         font-size: 3vw;
         font-family: "Oswald", sans-serif;
         font-weight: 300;
-        line-height: 1.5; }
+        line-height: 1.5;
+        text-align: justify; }
         @media (max-width: 533.33333px) {
           .about .about-intro .content p {
             font-size: 16px; } }
@@ -112,7 +113,8 @@
         font-size: 3vw;
         font-weight: 300;
         line-height: 1.8;
-        color: #333; }
+        color: #333;
+        text-align: justify; }
         @media (max-width: 533.33333px) {
           .about .intro-container .col-2 p {
             font-size: 16px; } }
@@ -168,7 +170,8 @@
         font-family: "Oswald", sans-serif;
         font-size: 3vw;
         font-weight: 300;
-        line-height: 1.8; }
+        line-height: 1.8;
+        text-align: justify; }
         @media (max-width: 533.33333px) {
           .about .strategy-container .col-2 p {
             font-size: 16px; } }

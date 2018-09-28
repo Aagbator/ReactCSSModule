@@ -110,6 +110,7 @@
         font-size: 3vw;
         font-weight: 300;
         line-height: 1.8;
+        text-align: justify;
         color: #333; }
         @media (max-width: 533.33333px) {
           .services .section-1 .col-2 p, .services .section-3 .col-2 p, .services .section-5 .col-2 p {
@@ -165,7 +166,8 @@
         color: #333;
         font-size: 3vw;
         font-weight: 300;
-        line-height: 1.8; }
+        line-height: 1.8;
+        text-align: justify; }
         @media (max-width: 533.33333px) {
           .services .section-2 .col-2 p, .services .section-4 .col-2 p {
             font-size: 16px; } }

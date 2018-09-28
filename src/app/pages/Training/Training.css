@@ -130,21 +130,22 @@
           @media (max-width: 433.33333px) {
             .trainings .trainings-container .trainings-cards .card h2 {
               font-size: 13px; } }
-          @media (min-width: 500px) {
+          @media (min-width: 600px) {
             .trainings .trainings-container .trainings-cards .card h2 {
-              font-size: 15px; } }
+              font-size: 18px; } }
         .trainings .trainings-container .trainings-cards .card p {
           font-family: "Oswald", sans-serif;
           font-size: 3vw;
           font-weight: 300;
           line-height: 2;
+          text-align: justify;
           color: #333; }
           @media (max-width: 400px) {
             .trainings .trainings-container .trainings-cards .card p {
               font-size: 12px; } }
-          @media (min-width: 466.66667px) {
+          @media (min-width: 500px) {
             .trainings .trainings-container .trainings-cards .card p {
-              font-size: 14px; } }
+              font-size: 15px; } }
         .trainings .trainings-container .trainings-cards .card .action-area {
           position: absolute;
           padding: 1rem;

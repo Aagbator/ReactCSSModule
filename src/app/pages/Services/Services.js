@@ -30,7 +30,9 @@ export default class Services extends React.Component{
                             </div>
                             <div className={styles['col-2']}>
                                 <h2>Business Analysis</h2>
-                                <p>With a team of experienced Business Analysts, we help businesses recognize and analyze their needs and deliver solutions to organizations strategically in a rapidly changing business environments.
+                                <p>With a team of experienced Business Analysts, we help businesses recognize and analyze
+                                    their needs and deliver solutions to organizations strategically in a rapidly
+                                    changing business environments.
                                 </p>
                             </div>
                         </div>
@@ -78,7 +80,7 @@ export default class Services extends React.Component{
                             </div>
                             <div className={styles['col-2']}>
                                 <h2>Enterprise Software Solution</h2>
-                                <p>Our Enterprise software solutions are built for small to large organizations. It continuously helps  to improve enterprise productivity and efficiency through business logic support functionality, and also provides business-oriented tools such as online payment processing and automated billing systems for business functions including order processing, accounting and customer relationship management.
+                                <p>Our Enterprise software solutions are built for small to large organizations. It continuously helps to improve enterprise productivity and efficiency through business logic support functionality, and also provides business-oriented tools such as online payment processing and automated billing systems for business functions including order processing, accounting and customer relationship management.
                                 </p>
                             </div>
                         </div>

@@ -10,7 +10,7 @@
     // background-image: url(../../../assets/images/bg-ext.jpg) left top, linear-gradient(#eb01a5, #d13531);
     background: #065785;
     background: url(../../../assets/images/bg.jpg); /* fallback */
-    background: linear-gradient(to bottom,rgba(9,87,133, 0.4), rgba(0,0,0, 0.8)),url(https://thumb7.shutterstock.com/display_pic_with_logo/2117717/380913697/stock-photo-business-team-discussion-team-customer-service-concept-380913697.jpg);
+    background: linear-gradient(to bottom,rgba(9,87,133, 0.4), rgba(0,0,0, 0.8)),url(../../../assets/images/about-banner.jpg);
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
@@ -43,6 +43,7 @@
         font-family: $second-ff;
         font-weight:300;
         line-height:1.5;
+        text-align:justify;
         @media #{$min992} {
           padding: 0 10%;
           font-weight:200;
@@ -99,6 +100,7 @@
         font-weight:300;
         line-height:1.8;
         color:$grey-text;
+        text-align:justify;
       }
     }
   }
@@ -149,6 +151,7 @@
         @include responsive-font(3vw, 16px, 18px);
         font-weight:300;
         line-height:1.8;
+        text-align:justify;
       }
     }
   }

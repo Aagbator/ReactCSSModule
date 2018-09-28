@@ -116,15 +116,16 @@
         h2{
           text-transform: uppercase;
           font-weight:600;
-          @include responsive-font(3vw, 13px, 15px);
+          @include responsive-font(3vw, 13px, 18px);
           margin:0.9rem 0 0.5rem;
           line-height: 1.5;
         }
         p{
           font-family: $second-ff;
-          @include responsive-font(3vw, 12px, 14px);
+          @include responsive-font(3vw, 12px, 15px);
           font-weight:300;
           line-height:2;
+          text-align:justify;
           color:$grey-text;
         }
 
