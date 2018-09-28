@@ -285,7 +285,7 @@
           flex: 1 0 100%; }
           @media (min-width: 992px) {
             .home .services-container .col-2 .block-container .block {
-              padding: 15px;
+              padding: 1px;
               flex: 1 50%; } }
           @media (min-width: 768px) {
             .home .services-container .col-2 .block-container .block {

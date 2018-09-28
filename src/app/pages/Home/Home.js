@@ -101,7 +101,8 @@ export default class Home extends React.Component{
                                         <img alt="logo" src={require('../../../assets/icons/enterprise software.svg')} />
                                     </div>
                                     <h5>Enterprise Software Solution</h5>
-                                    <p>Our Enterprise software solutions are built for small to large organizations to improve productivity,
+                                    <p>Our Enterprise software solutions are built for small to large organizations
+                                        to improve productivity,
                                         efficiency and provide critical solutions to organizational tasks as a whole.
                                     </p>
                                 </div>
