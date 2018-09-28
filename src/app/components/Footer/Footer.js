@@ -20,12 +20,11 @@ export default class Footer extends React.Component {
                     </div>
                 </div>
                 <div className={styles['col-2']}>
-                    <h2>Lagos</h2>
+                    <h2>Abuja</h2>
                     <address>
-                        6B, Crown Court Estate <br></br>
-                        Orisa Sanya street<br></br>
-                        Oniru estate<br></br>
-                        Victoria Island
+                        1, Durban Street,<br></br>
+                        Wuse 2,<br></br>
+                        Abuja.<br></br>
                     </address>
                 </div>
                 <div className={styles['col-3']}>

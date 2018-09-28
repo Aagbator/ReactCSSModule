@@ -16,7 +16,7 @@ export default class Products extends React.Component{
                         <p>
                             We have successfully delivered on-site and off-site product development
                             (software applications), project management, deployment & integration
-                            managed services,to our clients in western, eastern and central Africa.
+                            managed services to our clients in western, eastern and central Africa.
                         </p>
                     </div>
                 </section>
@@ -30,9 +30,11 @@ export default class Products extends React.Component{
                             </div>
                             <div className={styles['col-2']}>
                                 <h2>Omnibranches</h2>
-                                <p>OmniBranches is a Managed Agent Network that allows financial services providers to immediately launch an agent platform to provide agency banking services through an aggregate network of agents where these agents will be able to provide your services to end users.
+                                <p>OmniBranches is a Managed Agent Network that allows financial services providers and value added services merchants/companies
+                                    to immediately launch an agent management platform to provide agency banking services through an aggregate network of agents.
+                                    These agents will be able to provide various services to end users or their customers.
                                 </p>
-                                <a rel="noopener noreferrer" href="http://portal.omnibranches.com" target="_blank" className={`${styles.button} ${styles['btn-dark']}`}>Visit Website <i className={`fas fa-external-link-alt`}></i></a>
+                                <a rel="noopener noreferrer" href="http://omnibranches.com" target="_blank" className={`${styles.button} ${styles['btn-dark']}`}>Visit Website <i className={`fas fa-external-link-alt`}></i></a>
                             </div>
                         </div>
                     </div>

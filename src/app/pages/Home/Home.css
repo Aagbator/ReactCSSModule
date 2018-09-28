@@ -34,7 +34,7 @@
       padding: 10vh 6vw 2vh; }
       @media (min-width: 768px) {
         .home .home-container .content {
-          padding: 25vh 14vw 9vh;
+          padding: 30vh 14vw 9vh;
           margin: 0 auto; } }
       .home .home-container .content h1 {
         font-family: "Roboto", sans-serif;
@@ -155,7 +155,7 @@
     opacity: 0; } }
   .home .intro-container {
     text-align: center;
-    min-height: 50vh;
+    min-height: 70vh;
     padding: 5rem 0; }
     .home .intro-container .col-1 {
       width: 100%; }
@@ -285,7 +285,7 @@
           flex: 1 0 100%; }
           @media (min-width: 992px) {
             .home .services-container .col-2 .block-container .block {
-              padding: 20px;
+              padding: 15px;
               flex: 1 50%; } }
           @media (min-width: 768px) {
             .home .services-container .col-2 .block-container .block {

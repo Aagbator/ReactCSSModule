@@ -14,9 +14,9 @@ export default class Services extends React.Component{
                     <div className={styles.content}>
                         <h1>Services</h1>
                         <p>
-                            We have successfully delivered on-site and off-site product development
-                            (software applications), project management, deployment & integration
-                            managed services,to our clients in western, eastern and central Africa.
+                            We have successfully delivered on-site and off-site product development (software applications),
+                            application support, application deployment &  integration managed services, project management,
+                            business analysis, to our clients in western, eastern and central Africa.
                         </p>
                     </div>
                 </section>
@@ -46,7 +46,7 @@ export default class Services extends React.Component{
                             </div>
                             <div className={styles['col-2']}>
                                 <h2>Project Management</h2>
-                                <p>With hands on application of processes, methods, knowledge and skills, we have helped organizations with initiating, planning, executing, controlling, and closing the work to achieve specific goals and meet specific success criteria at the specified time through experience, to achieve project objectives.
+                                <p>With hands-on application of processes, methods, knowledge and skills, we have helped organizations with initiating, planning, executing, controlling, and closing the work to achieve specific goals and meet specific success criteria at the specified time through experience, to achieve project objectives.
                                 </p>
                             </div>
                         </div>
@@ -78,7 +78,7 @@ export default class Services extends React.Component{
                             </div>
                             <div className={styles['col-2']}>
                                 <h2>Enterprise Software Solution</h2>
-                                <p>Our Enterprise software solution are built for (small to) large organizations. It continuously helps  to improve enterprise productivity and efficiency through business logic support functionality, and also provides business-oriented tools such as online payment processing and automated billing systems for business functions including order processing, accounting and customer relationship management.
+                                <p>Our Enterprise software solutions are built for (small to) large organizations. It continuously helps  to improve enterprise productivity and efficiency through business logic support functionality, and also provides business-oriented tools such as online payment processing and automated billing systems for business functions including order processing, accounting and customer relationship management.
                                 </p>
                             </div>
                         </div>

@@ -35,12 +35,13 @@ export default class About extends React.Component{
 
         return(
             <section className={styles.about}>
+                {/*<intro title="About">hi</intro>*/}
                 <section className={styles['about-intro']}>
                     <div className={styles.content}>
                         <h1>About</h1>
                         <p>
                             We aim to provide innovation and reliable solutions and services
-                            that guarantee excellence for our client's businesses
+                            that guarantee excellence for our clients' businesses
                         </p>
                     </div>
                 </section>
@@ -54,12 +55,10 @@ export default class About extends React.Component{
                             </div>
                             <div className={styles['col-2']}>
                                 <h2>Empowering Africa through Innovation</h2>
-                                <p>Founded in 1994 and incorporated in 2003, we are as an
-                                    Information Technology company that seeks to tap into
-                                    world wide technology trends offers a wide range of
-                                    professional IT services. We are an entrepreneurial
-                                    company focused on the future with a commitment to
-                                    pioneering African service excellence.
+                                <p>Founded in 1994 and incorporated in 2003,
+                                    we are an Information Technology company that seeks to tap into world wide technology trends.
+                                    We offers a wide range of professional IT services and products.
+                                    We are an entrepreneurial company focused on the future with a commitment to pioneering African service excellence. We are in touch with the future!
                                 </p>
                             </div>
                         </div>
@@ -89,8 +88,9 @@ export default class About extends React.Component{
                     <div className={styles.container}>
                         <header>
                             <h2>Our Team</h2>
-                            <p>We are experienced in our tech stack with a large team of developers, designers,
-                                product managers, testers, QA and more </p>
+                            <p>We are experienced in our tech stack with a large team of entrepreneurs,
+                                sales executives, developers, designers, product managers, support engineers, project managers,
+                                business analysts, system architect, systems integrators, testers, QA and more</p>
                         </header>
                         <div className={styles['team-profiles']}>
                             {teamList}
