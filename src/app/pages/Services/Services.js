@@ -30,7 +30,7 @@ export default class Services extends React.Component{
                             </div>
                             <div className={styles['col-2']}>
                                 <h2>Business Analysis</h2>
-                                <p>In line with our team of experienced Business Analysts, we are helping businesses recognize and analyze their needs and deliver solutions to organizations strategically in a rapidly changing business environments.
+                                <p>With a team of experienced Business Analysts, we help businesses recognize and analyze their needs and deliver solutions to organizations strategically in a rapidly changing business environments.
                                 </p>
                             </div>
                         </div>
@@ -46,7 +46,7 @@ export default class Services extends React.Component{
                             </div>
                             <div className={styles['col-2']}>
                                 <h2>Project Management</h2>
-                                <p>With hands-on application of processes, methods, knowledge and skills, we have helped organizations with initiating, planning, executing, controlling, and closing the work to achieve specific goals and meet specific success criteria at the specified time through experience, to achieve project objectives.
+                                <p>With hands-on application of processes, methods, knowledge and skills, we help organizations with initiating, planning, executing, controlling, and closing the work to achieve specific goals and meet specific success criteria at the specified time through experience, to achieve project objectives.
                                 </p>
                             </div>
                         </div>
@@ -78,7 +78,7 @@ export default class Services extends React.Component{
                             </div>
                             <div className={styles['col-2']}>
                                 <h2>Enterprise Software Solution</h2>
-                                <p>Our Enterprise software solutions are built for (small to) large organizations. It continuously helps  to improve enterprise productivity and efficiency through business logic support functionality, and also provides business-oriented tools such as online payment processing and automated billing systems for business functions including order processing, accounting and customer relationship management.
+                                <p>Our Enterprise software solutions are built for small to large organizations. It continuously helps  to improve enterprise productivity and efficiency through business logic support functionality, and also provides business-oriented tools such as online payment processing and automated billing systems for business functions including order processing, accounting and customer relationship management.
                                 </p>
                             </div>
                         </div>
@@ -96,7 +96,7 @@ export default class Services extends React.Component{
                                 {/*, Database support, Systems Integration, Business Intelligence, Cloud Deployment Services, Application Development, AI & Machine Learning*/}
                                 <h2>Mobile Financial Services</h2>
                                 <p>
-                                    The world has gone mobile so has businesses too.We equip individuals and businesses to drive financial services via mobile.
+                                    The world has gone mobile, so has businesses too. We equip individuals and businesses to drive financial services via mobile.
                                 </p>
                             </div>
                         </div>

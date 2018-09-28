@@ -19,7 +19,7 @@ let TrainingList = [
     },
     {
         title: 'G Suite for Education',
-        content: 'We drive Tech-literacy for schools in Africa.Accelerating technology adoption for schools to enable global competitiveness.',
+        content: 'We drive Tech-literacy for schools in Africa; therefore accelerating technology adoption for schools to enable global competitiveness.',
         img:'gsuite.jpeg',
         logo:'google.png',
         url:'https://gsuite.google.com/learning-center/'
@@ -32,7 +32,7 @@ let TrainingList = [
     // },
     {
         title: 'Agent Banking Business Training',
-        content: 'We are constantly recruiting and training agents to offer agent banking services. This is not just a Business bouquet for Swifta but a contributory drive towards financial inclusion in Africa.',
+        content: 'We are constantly recruiting and training business owners to offer agent banking services. This is not just a Business bouquet for Swifta but a contributory drive towards financial inclusion in Africa.',
         img:'agentbanking.jpg',
         logo:'logo.svg',
         url:''
@@ -46,7 +46,7 @@ let TrainingList = [
     },
     {
         title: 'Mobile Financial Service Training',
-        content: 'The world has gone mobile so has businesses too.We equip individuals and businesses to drive financial services via mobile.',
+        content: 'The world has gone mobile so has businesses too. We equip individuals and businesses to drive financial services via mobile platforms',
         img:'mobile-fintech.jpg',
         logo:'logo.svg',
         url:''

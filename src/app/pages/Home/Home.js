@@ -60,8 +60,8 @@ export default class Home extends React.Component{
                 <section className={styles['services-container']}>
                         <div className={styles['col-1']}>
                            <h2>Our services</h2>
-                            <p>We are a modern company, committed to promote the development of our customers and their
-                                business from the technology side, providing them access to a global market and supporting
+                            <p>We are a modern company, committed to promoting the development of our customers and their
+                                business from the technology side; providing them access to a global market and supporting
                                 its operations through tailored solutions.
                             </p>
                         </div>
@@ -101,7 +101,7 @@ export default class Home extends React.Component{
                                         <img alt="logo" src={require('../../../assets/icons/enterprise software.svg')} />
                                     </div>
                                     <h5>Enterprise Software Solution</h5>
-                                    <p>Our Enterprise software solution are built for small to large organizations to improve productivity,
+                                    <p>Our Enterprise software solutions are built for small to large organizations to improve productivity,
                                         efficiency and provide critical solutions to organizational tasks as a whole.
                                     </p>
                                 </div>
