@@ -94,7 +94,7 @@
         font-weight:300;
         line-height:1.8;
         text-align:justify;
-        color:$grey-text;
+        //color:$grey-text;
       }
     }
   }
@@ -147,7 +147,7 @@
         line-height:2;
       }
       p{
-        color:$grey-text;
+        //color:$grey-text;
         @include responsive-font(3vw, 16px, 18px);
         font-weight:300;
         line-height:1.8;

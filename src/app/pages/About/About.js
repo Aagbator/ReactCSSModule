@@ -9,14 +9,25 @@ export default class About extends React.Component{
 
     render(){
         let teams = [
-            {name: 'Victor Asemota', position: 'Chief Executive Officer', img:'victor.jpeg', linkedin: 'https://www.linkedin.com/in/asemota/', twitter: 'https://twitter.com/asemota'},
+            // {name: 'Victor Asemota', position: 'Chief Executive Officer', img:'victor.jpeg', linkedin: 'https://www.linkedin.com/in/asemota/', twitter: 'https://twitter.com/asemota'},
+            // {name: 'Chudi Nelson Ojukwu', position: 'Chairman', img:'nelson ojukwu.jpg', linkedin: 'https://www.linkedin.com/in/chudi-ojukwu-85015a39/', twitter: 'https://twitter.com/nelsonchudi'},
+            // {name: 'Henry Afolabi David', position: 'Chief Technology Officer', img:'henry david.jpg', linkedin: 'https://www.linkedin.com/in/henry-david-1003a848/', twitter: 'https://twitter.com/henrydee'},
+            // {name: 'Ayotunde Farinu', position: 'Chief Operating Officer', img:'Ayotunde.jpg', linkedin: 'https://www.linkedin.com/in/ayotunde-farinu-5a092317/', twitter: 'https://twitter.com/contactayotunde'},
+            // {name: 'Modupe Ladejebi', position: 'Head Of Products', img:'Modupe ladejebi.jpg', linkedin: 'https://www.linkedin.com/in/ladejebi-modupe-40133318/', twitter: 'https://twitter.com/dupsykool'},
+            // //{name: 'Kayode Otegbeye', position: 'Managing Consultant', img:'kayode.jpg', linkedin: 'https://www.linkedin.com/in/kayode-otegbeye-85929243/', twitter: 'https://twitter.com/opeyemi_snr'},
+            // {name: 'Adebola Sanni', position: 'Head, Business Development', img:'Adebola.jpg', linkedin: 'https://www.linkedin.com/in/adebolasanniawojobi/', twitter: ''}
+            // // {name: 'Anthony Agbator', position: 'Head of Development', img:'Anthony.jpg', linkedin: '', twitter: ''}
+
+            {name: 'Ayotunde Farinu', position: 'Chief Executive Officer', img:'Ayotunde.jpg', linkedin: 'https://www.linkedin.com/in/ayotunde-farinu-5a092317/', twitter: 'https://twitter.com/contactayotunde'},
+            {name: 'Victor Asemota', position: 'Director', img:'victor.jpeg', linkedin: 'https://www.linkedin.com/in/asemota/', twitter: 'https://twitter.com/asemota'},
+            {name: 'Henry Afolabi David', position: 'Director', img:'henry david.jpg', linkedin: 'https://www.linkedin.com/in/henry-david-1003a848/', twitter: 'https://twitter.com/henrydee'},
             {name: 'Chudi Nelson Ojukwu', position: 'Chairman', img:'nelson ojukwu.jpg', linkedin: 'https://www.linkedin.com/in/chudi-ojukwu-85015a39/', twitter: 'https://twitter.com/nelsonchudi'},
-            {name: 'Henry Afolabi David', position: 'Chief Technology Officer', img:'henry david.jpg', linkedin: 'https://www.linkedin.com/in/henry-david-1003a848/', twitter: 'https://twitter.com/henrydee'},
-            {name: 'Ayotunde Farinu', position: 'Chief Operating Officer', img:'Ayotunde.jpg', linkedin: 'https://www.linkedin.com/in/ayotunde-farinu-5a092317/', twitter: 'https://twitter.com/contactayotunde'},
-            {name: 'Modupe Ladejebi', position: 'Head Of Products', img:'Modupe ladejebi.jpg', linkedin: 'https://www.linkedin.com/in/ladejebi-modupe-40133318/', twitter: 'https://twitter.com/dupsykool'},
+            {name: 'Modupe Ladejebi', position: 'Chief Technology Officer', img:'Modupe ladejebi.jpg', linkedin: 'https://www.linkedin.com/in/ladejebi-modupe-40133318/', twitter: 'https://twitter.com/dupsykool'},
             //{name: 'Kayode Otegbeye', position: 'Managing Consultant', img:'kayode.jpg', linkedin: 'https://www.linkedin.com/in/kayode-otegbeye-85929243/', twitter: 'https://twitter.com/opeyemi_snr'},
             {name: 'Adebola Sanni', position: 'Head, Business Development', img:'Adebola.jpg', linkedin: 'https://www.linkedin.com/in/adebolasanniawojobi/', twitter: ''}
-            // {name: 'Anthony Agbator', position: 'Head of Development', img:'Anthony.jpg', linkedin: '', twitter: ''}
+
+
+
         ];
 
         let teamList = teams.map((team, index) =>
@@ -40,8 +51,8 @@ export default class About extends React.Component{
                     <div className={styles.content}>
                         <h1>About</h1>
                         <p>
-                            We aim to provide innovation and reliable solutions and services
-                            that guarantee excellence for our clients' businesses
+                            We aim to provide innovative and reliable solutions that guarantee excellence
+                            for our clients' businesses and improve lives
                         </p>
                     </div>
                 </section>
@@ -57,8 +68,9 @@ export default class About extends React.Component{
                                 <h2>Empowering Africa through Innovation</h2>
                                 <p>Founded in 1994 and incorporated in 2003,
                                     we are an Information Technology company that seeks to tap into world wide technology trends.
-                                    We offers a wide range of professional IT services and products.
-                                    We are an entrepreneurial company focused on the future with a commitment to pioneering African service excellence. We are in touch with the future!
+                                    We offer a wide range of professional IT services and products.
+                                    We are an entrepreneurial company focused on the future with a commitment to pioneering African
+                                    service excellence. We are in touch with the future!
                                 </p>
                             </div>
                         </div>
@@ -90,7 +102,7 @@ export default class About extends React.Component{
                             <h2>Our Team</h2>
                             <p>We are experienced in our tech stack with a large team of entrepreneurs,
                                 sales executives, developers, designers, product managers, support engineers, project managers,
-                                business analysts, system architect, systems integrators, testers, QA and more</p>
+                                business analysts, solutions architects, systems integrators, testers, QA specialists and more</p>
                         </header>
                         <div className={styles['team-profiles']}>
                             {teamList}

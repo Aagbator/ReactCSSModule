@@ -183,7 +183,7 @@
         @include responsive-font(3vw, 14px, 18px);
         font-weight: 300;
         line-height:1.5;
-        color:$grey-text;;
+        //color:$grey-text;
         @media #{$min992}{
           margin : 1rem 0rem 3rem ;
           font-weight: 200;
@@ -245,14 +245,14 @@
           color:$grey-text;
         }
         p{
-          @include responsive-font(3vw, 9px, 12px);
+          @include responsive-font(3vw, 9px, 13px);
           text-transform: capitalize;
           @media #{$min992}{
-            font-weight: 200;
+            font-weight: 300;
           }
           font-weight:300;
           line-height:1.5;
-          color:$grey-text;
+          //color:$grey-text;
         }
         .socials{
           margin:1rem 0;

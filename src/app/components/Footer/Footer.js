@@ -20,6 +20,15 @@ export default class Footer extends React.Component {
                     </div>
                 </div>
                 <div className={styles['col-2']}>
+                    <h2>Lagos</h2>
+                    <address>
+                        6B, Crown Court Estate <br></br>
+                        Orisa Sanya street<br></br>
+                        Oniru estate<br></br>
+                        Victoria Island
+                    </address>
+                </div>
+                <div className={styles['col-2']}>
                     <h2>Abuja</h2>
                     <address>
                         1, Durban Street,<br></br>
@@ -30,10 +39,11 @@ export default class Footer extends React.Component {
                 <div className={styles['col-3']}>
                     <h2>Accra</h2>
                     <address>
-                        Trinity Junction, Off IPS Road<br></br>
-                        Mempeason HSE No. 15<br></br>
+                        GD-134-1995, Boundary Road,<br></br>
+                        Opposite Twumasiwa Hospital,<br></br>
                         East legon<br></br>
-                        Accra<br></br>
+                        Accra,<br></br>
+                        Ghana.<br></br>
                     </address>
                 </div>
             </footer>

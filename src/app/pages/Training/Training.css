@@ -138,8 +138,7 @@
           font-size: 3vw;
           font-weight: 300;
           line-height: 2;
-          text-align: justify;
-          color: #333; }
+          text-align: justify; }
           @media (max-width: 400px) {
             .trainings .trainings-container .trainings-cards .card p {
               font-size: 12px; } }

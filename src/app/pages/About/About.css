@@ -207,8 +207,7 @@
       .about .team-container header p {
         font-size: 3vw;
         font-weight: 300;
-        line-height: 1.5;
-        color: #333; }
+        line-height: 1.5; }
         @media (max-width: 466.66667px) {
           .about .team-container header p {
             font-size: 14px; } }
@@ -270,17 +269,16 @@
           font-size: 3vw;
           text-transform: capitalize;
           font-weight: 300;
-          line-height: 1.5;
-          color: #333; }
+          line-height: 1.5; }
           @media (max-width: 300px) {
             .about .team-container .team-profiles .card p {
               font-size: 9px; } }
-          @media (min-width: 400px) {
+          @media (min-width: 433.33333px) {
             .about .team-container .team-profiles .card p {
-              font-size: 12px; } }
+              font-size: 13px; } }
           @media (min-width: 992px) {
             .about .team-container .team-profiles .card p {
-              font-weight: 200; } }
+              font-weight: 300; } }
         .about .team-container .team-profiles .card .socials {
           margin: 1rem 0; }
           .about .team-container .team-profiles .card .socials a {

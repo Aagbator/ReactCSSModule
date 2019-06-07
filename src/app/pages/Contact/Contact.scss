@@ -194,6 +194,18 @@
               border: 3px solid $light-blue;
             }
           }
+          .button{
+            display:block;
+            width:80%;
+            margin:10px auto;
+            padding:1em;
+            color:$white;
+            text-transform: uppercase;
+            @include responsive-font(3vw, 11px, 14px);
+            background-color: $brand-primary;
+            border:none;
+            border-radius:5px;
+          }
           margin-bottom:20px;
           &.col-half{
             @media #{$min992} {
@@ -205,20 +217,9 @@
             flex:0 1 100%;
           }
         }
-        button{
-          display:block;
-          width:80%;
-          margin:10px auto;
-          padding:1em;
-          color:$white;
-          text-transform: uppercase;
-          @include responsive-font(3vw, 11px, 14px);
-          background-color: $brand-primary;
-          border:none;
-          border-radius:5px;
-        }
+
       }
-      color:$grey-text;
+      //color:$grey-text;
       padding-top:1rem;
       @media #{$min992} {
         width: 50%;

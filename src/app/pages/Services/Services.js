@@ -64,7 +64,8 @@ export default class Services extends React.Component{
                             </div>
                             <div className={styles['col-2']}>
                                 <h2>Software Application Support</h2>
-                                <p>Over years, our IT support professionals have worked to support technical projects like application software, infrastructure software, for local and international companies.
+                                <p>Over the years, our IT support professionals have worked to support technical projects (like application software,
+                                    infrastructure software) for local and international companies.
                                 </p>
                             </div>
                         </div>
@@ -80,7 +81,7 @@ export default class Services extends React.Component{
                             </div>
                             <div className={styles['col-2']}>
                                 <h2>Enterprise Software Solution</h2>
-                                <p>Our Enterprise software solutions are built for small to large organizations. It continuously helps to improve enterprise productivity and efficiency through business logic support functionality, and also provides business-oriented tools such as online payment processing and automated billing systems for business functions including order processing, accounting and customer relationship management.
+                                <p>Our Enterprise software solutions are built for small to large organizations. It continuously helps to improve enterprise productivity and efficiency through business logic support functionality, and also provides business-oriented tools such as online payment processing and automated billing systems for business functions.
                                 </p>
                             </div>
                         </div>
@@ -98,7 +99,7 @@ export default class Services extends React.Component{
                                 {/*, Database support, Systems Integration, Business Intelligence, Cloud Deployment Services, Application Development, AI & Machine Learning*/}
                                 <h2>Mobile Financial Services</h2>
                                 <p>
-                                    The world has gone mobile, so has businesses too. We equip individuals and businesses to drive financial services via mobile.
+                                    The world has gone mobile, so have businesses too. We equip individuals and businesses to drive financial services via mobile.
                                 </p>
                             </div>
                         </div>

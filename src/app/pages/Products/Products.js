@@ -66,7 +66,7 @@ export default class Products extends React.Component{
                             </div>
                             <div className={styles['col-2']}>
                                 <h2>MFiSA</h2>
-                                <p> Also known as Mobile Financial Service Aggreggator is a pan african payment channel solution that allows collection of funds from anywhere through bank account, Card, Payment links, USSD, QR Code etc
+                                <p>Also known as Mobile Financial Service Aggreggator. MFISA is a pan african payment channel solution that allows collection of funds from anywhere through bank account, Card, Payment links, USSD, QR Code etc
                                 </p>
                                 <a rel="noopener noreferrer" href="http://mfisa.com" target="_blank" className={`${styles.button} ${styles['btn-dark']}`}>Visit Website <i className={`fas fa-external-link-alt`}></i></a>
                             </div>
